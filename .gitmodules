@@ -1,0 +1,3 @@
+[submodule "xelatex-emoji"]
+	path = xelatex-emoji
+	url = https://github.com/mreq/xelatex-emoji.git
