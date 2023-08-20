@@ -1,0 +1,10 @@
+\subsection*{PATTERN LANGUAGE COMPONENTS {\hfill \sensory}}
+
+\textbf{Context} In a collaborative setting with people who are new to
+design patterns.\newline \textbf{If} new attendees are being invited
+to create new patterns BUT the context, problem, solution language
+brings assumptions that they may not be comfortable \newline \textbf{Then}
+introduce more dynamic keywords such as HOWEVER (to describe a gap or
+conflict), BECAUSE (to describe a set of operating causes), THEREFORE
+(to describe a rationale based on related data) , and SPECIFICALLY (to
+describe next steps), to help people build patterns piece by piece.
