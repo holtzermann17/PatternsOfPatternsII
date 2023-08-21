@@ -165,11 +165,11 @@
  pdftitle={Patterns of Patterns II},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 30.0.50 (Org mode 9.6.1)}, 
+ pdfcreator={Emacs 30.0.50 (Org mode 9.6.1)},
  pdflang={English}}
 
 \citestyle{acmauthoryear}
-\let\cleardoublepage=\clearpage 
+\let\cleardoublepage=\clearpage
 \begin{document}
 
 \input{title-stuff-sequel}
@@ -195,17 +195,16 @@
 %% patterns of patterns can help you organise your work with Design
 %% Pattern Language methods.}
 
-The previous installation in this series presented a high-level
-methodological synthesis of three techniques from design, futures
-studies, and learning management in the form of a design pattern
-called PLACARD \cite{patterns-of-patterns-i}.  During the two years
-which have elapsed since then, we have had opportunities to deploy and
-further develop these methods in various contexts.  We will describe
-some of these applications in the four case studies below.  We have
-distilled this experience into a collection of practical patterns
-which augment the earlier high-level pattern.  This fully-fledged
-collection of patterns of patterns can help you organise your work
-with Design Pattern Language methods.
+Our paper “Patterns of Patterns” presented a high-level methodological
+synthesis of three techniques from design, futures studies, and
+learning management in the form of a design pattern called PLACARD
+\cite{patterns-of-patterns-i}.  Since then, we have had opportunities
+to deploy and further develop these methods in various contexts.  We
+will describe some of these applications in the four case studies
+below.  We have distilled this experience into a collection of
+practical patterns which augment the earlier high-level PLACARD
+pattern.  This fully-fledged collection of patterns of patterns can
+help you organize your work with Design Pattern Language methods.
 
 % \textbf{Note: We can build out the structure based on this thesis, to follow through in later paragraphs.  These things are initially very different!  Maybe add a ref to the psych people about how difficult it is to combine them.  Let's talk some about the difficulties whether or not we have successfully negotiated them.}
 
@@ -215,7 +214,7 @@ with Design Pattern Language methods.
 \subsection{Recap of “Patterns of Patterns”}
 \label{sec:org7c32ecc}
 
-We introduced a synthesis of methods that operationalise the
+We introduced a synthesis of methods that operationalize the
 “sensory”, “cognitive” and “motor” systems from psychology in the context of social intelligence.  The particular methods we outlined were certainly not the only way to implement these system features.  What drew our attention is that each of the methods we selected comes with a framework or template; each of the methods is, essentially, a design pattern.
 
 \begin{itemize}
@@ -226,14 +225,14 @@ be used to unpack a problem area of interest.}
 \end{itemize}
 
 We made the further assertion that these sensory, cognitive, and motor
-methods can be hooked together, theorising design patterns as little
+methods can be hooked together, theorizing design patterns as little
 pieces of moveable social intelligence.  We called the specific method
 that combines PAR, CLA, and DPL the “PLACARD” pattern.
 
-We applied these methods to analyse the design Pattern Language
+We applied these methods to analyze the design Pattern Language
 literature and practices, and also developed a case study examining
 the way the Emacs Research Group used related methods.  We built on
-these analyses to outline potential futures for the development of
+these analyzes to outline potential futures for the development of
 pattern methods.
 %% \begin{itemize}
 %% \item PLACARD becomes transferable and computational.
@@ -248,15 +247,34 @@ pattern methods.
 %% remains to be done.
 
 \subsection{Related work}
+Our work progressed within and alongside the Peeragogy project:
+aspects of peeragogy were previously presented as design patterns
+\cite{corneli2015a}.  Our aim in the workshops, described here, was to
+share some of the way we work together, rapidly scaffolding
+collaboration processes among people who typically have never worked
+together before.  Of course, there are many ways to build
+collaboration and to develop effective projects; for example,
+\emph{sociocracy} \cite{sociocracy-manual} is a strategy for
+collaboration which is distributed over nested ‘circles’, and
+\emph{theory of change} \cite{Coryn2010} describes how to articulate
+criteria for a project’s success by mapping the preconditions for
+change.  \emph{Agile methods} are perhaps better known to authors
+working with design patterns, since they share a similar etiology and
+have been fruitfully combined \cite{sutherland2019a}.  Compared with
+these other methods, peeragogy is distinctively informal, in the sense
+that it can be used anywhere: within, outside, or across organizations
+and projects.
+
 \citet{iba2016pattern} provide a large collection of patterns for
 creating patterns.  Their threefold decomposition of the pattern
 language creation process, into mining (\emph{a sensory activity}),
 writing (\emph{a cognitive activity}), and symbolizing (\emph{a motor
-activity}), bears an analogy with PLACARD.  However, here, our aim is
-neither to review such analogies, nor to evaluate the specific theory
-encapsulated in Iba and Isaku’s {\scitshape Pattern Language Creation}
-pattern.  Rather, what we aim to describe here in some detail is our
-overall process of working with patterns.
+activity}), bears an analogy with PLACARD.  Our aim is not to retrace
+Iba and Isaku’s {\scitshape Pattern Language Creation} pattern —
+though we do cross-reference their work at key junctures here.
+Rather, our aim is to descibe our own process of working with
+patterns, and to continue the reconstruction of pattern theory begun
+in the prequel.
 
 Earlier authors, such as \citet{moran1971a} and \citet{OXMAN1994141},
 looked at the specifically-computational implementation of design
@@ -266,95 +284,93 @@ social interaction and paper prototype level.  We return to questions
 related to supportive computational implementation in the closing
 sections of this paper.
 
-Regarding social cognition, we engage with the active inference
-framework as a formalism which “can be applied to explain the
-influential flows and dynamics of any open system at any scale,” per
-\citet{Hiplito2022}.  These authors point out that patterns (in a
-suitably general sense) are pre-linguistic, discovered and learned
-through bodily experience.  With language, the articulation of
-patterns allows us to participate in \emph{niche construction}.
-
+In Section \ref{second-case-study}, we draw connections between our
+work here to the active inference framework, which “can be applied to
+explain the influential flows and dynamics of any open system at any
+scale” \cite{Hiplito2022}, and begin to integrate this framework with
+pattern language methods.  Hip\'olito and van Es point out that
+patterns (when understood in a suitably general sense) are
+pre-linguistic, and are discovered and learned through bodily
+experience.  With language, the articulation of patterns allows us to
+participate in a process \emph{niche construction}.
 %% Can we relate Alexander’s “Maximum Entropy” analysis with the stats methods used here?
-
 %% Add City is not a tree quote.
-
-In this regard, we work in a way that is rather closer to the
-sensibilities of Christopher \citet{alexander1965a} —
-\begin{quote}
-It is more and more widely recognized today that there is some
-essential ingredient missing from artificial cities. When compared
-with ancient cities that have acquired the patina of life, our modern
-attempts to create cities artificially are, from a human point of
-view, entirely unsuccessful.
-\end{quote}
-— than those of Ren\'e
-\citet{descartes1850discourse}, who wrote:
-\begin{quote}
-\ldots it is observable that the buildings which a single architect
-has planned and executed, are generally more elegant and commodious
-than those which several have attempted to improve, by making old
-walls serve for purposes for which they were not originally built.
-\end{quote}
-We embrace the often messy process of prototyping our way forward; and
-continue the reconstruction of pattern theory begun in the prequel.
+%% In this regard, we work in a way that is rather closer to the
+%% sensibilities of Christopher \citet{alexander1965a} —
+%% \begin{quote}
+%% It is more and more widely recognized today that there is some
+%% essential ingredient missing from artificial cities. When compared
+%% with ancient cities that have acquired the patina of life, our modern
+%% attempts to create cities artificially are, from a human point of
+%% view, entirely unsuccessful.
+%% \end{quote}
+%% — than those of Ren\'e
+%% \citet{descartes1850discourse}, who wrote:
+%% \begin{quote}
+%% \ldots it is observable that the buildings which a single architect
+%% has planned and executed, are generally more elegant and commodious
+%% than those which several have attempted to improve, by making old
+%% walls serve for purposes for which they were not originally built.
+%% \end{quote}
+Towards this end, we embrace the often messy process of prototyping
+our way forward.
 
 \section{Methodology}
 \label{sec:org134acbb}
 \label{methods}
 
-In the current paper we examine the major events in our work that took
-place since the publication of “Patterns of Patterns”.  We ran three
-formal workshops that were inspired by the original set of methods,
-and we will describe \emph{how the methods evolved further in those
-settings}.  We also used the aforementioned paper as a focal reading
+We focus on a few landmarks in our collaboration that have taken shape
+since the publication of “Patterns of Patterns”.  We ran three
+separate workshops that were inspired by the original set of methods,
+and we will describe how the methods evolved further in those
+settings.  We also used the aforementioned paper as a focal reading
 over three sequential years of a postgraduate course, CIS 9590
 “Information Systems Development Project” at Baruch College, part of
-the City University of New York.  Together, an analysis of these
-touchpoints suggests ways in which the methods can continue to evolve.
-As before, we draw on the core methods of PLACARD, for example, using
-Causal Layered Analysis directly within some of workshops, and also
-using it as a \emph{post hoc} analysis tool.
+the City University of New York.  We use experience reports and Causal
+Layered Analysis to develop a deep dive into that application.
 
-Most centrally, we used design patterns both as design inputs and as
-outputs in the workshops.  A selection of these patterns are included
-here.  Each of the patterns is given a marker, (s), (c), or (m), to
-indicate whether it plays a primarily sensory, cognitive, or motor
-role.  We also include the \emph{itinerary} for each of the workshops
-to help bring the reader into the scene, and encapsulate post-workshop
+We used design patterns both as design inputs and as outputs in each
+of the workshops.  A selection of these patterns are included here.
+Each of the patterns is given a marker, (s), (c), or (m), to indicate
+whether it plays a primarily sensory, cognitive, or motor role.  We
+also include the \emph{itinerary} for each of the workshops to help
+bring the reader into the scene, and encapsulate post-workshop
 reflections as further design patterns.
 
 In addition to making use of existing patterns, we made a point of
 ensuring that those patterns had opportunity to grow and evolve, and
 examine how their use fostered the emergence of additional patterns.
-We endeavour to show this process within the paper.  As such, the
+We endeavor to show this process within the paper.  As such, the
 paper includes a combination of patterns that follow a formal
 template, and proto-patterns with less structure.  Proto-patterns
-without substructure distinguished by a “💎” marker, evoking the
+without substructure are distinguished by a “💎” marker, evoking the
 concept of \emph{pattern mining}.  In our view, additional formality
-does not always help with communication, and we endeavour to show how
+does not always help with communication, and we endeavor to show how
 and when it is helpful.  In Section \ref{cis-case-study}, we give some
-examples which add pattern structure to proto-patterns.  Appendix
-\ref{synthesis-of-form} gives some further justification for including
-work at different levels of formality, with reference to
-\citet{alexander1964notes}.
+examples which use our {\sc Pattern Language Components} to add
+structure to proto-patterns.  Appendix \ref{synthesis-of-form} gives
+some further justification for including work at different levels of
+formality, with reference to \citet{alexander1964notes}.  Some of the
+(proto-)patterns that we present here were created by workshop
+participants rather than by coauthors, and these are distinguished by
+a “⚒” marker (regardless of their level of formality).
 
-For the patterns which are spelled out formally, we typically use this
-simple variation on the classical “Context Problem Solution” pattern
-template:
+For the patterns which are spelled out formally in the paper, we
+typically use this simple variation on the classical “Context Problem
+Solution” pattern template:
 \smallskip
 
 \begin{tabular}{lll}
 \phantom{hellohellohello}& \textbf{Context} \ldots & {[}Summary of the working context{]}\\
 \phantom{hellohellohello}&\textbf{If} \ldots\ BUT \ldots & {[}A conflict, problem, or gap arising in this context{]}  \\
-\phantom{hellohellohello}&\textbf{Then} \ldots & {[}Actions to take to resolve the conflict{]} 
+\phantom{hellohellohello}&\textbf{Then} \ldots & {[}Actions to take to resolve the conflict{]}
 \end{tabular}
 \smallskip
 
-Some also include an \textbf{Example}.  We use an intuitive
-alternative template structure to describe a sub-language of roles.
-Narrative around the patterns is presented in an italic font.
-
-
+We use an intuitive alternative template structure to describe a
+sub-language of roles in Section \ref{second-case-study}.  In the
+sections focused on presenting patterns, narrative around the patterns
+appears in an italic font.
 
 We present the patterns that we developed and used in (mostly)
 chronological order, aiming to show how the use of certain patterns
@@ -366,8 +382,8 @@ and potentially being validated or invalidated by the interactions.
 As observed by \citet{iba2016pattern} a description of pattern-writing
 patterns helped to identify when patterns are used, but \emph{not
 every pattern is used every time}.  In our context, the survival of a
-given pattern the next workshop (or not) gives a sense of the
-evolutionary character of overall method.  Some of the methodological
+given pattern to the next workshop (or not) gives a sense of the
+evolutionary character of the overall method.  Some of the methodological
 changes were given strategic rationale, and became the seeds of new
 patterns (e.g., {\sc Increase Participant Control}, elaborated in the
 first case study below, is one such example).
@@ -379,7 +395,7 @@ this paper is an opportunity for review at a deeper rhythm.
 
 \clearpage
 
-\section{Case Study 1: “Going Meta” workshop at Anticipation 2022}
+\section{Case Study 1: “Going Meta” workshop at Anticipation 2022}\label{anticipation-case-study}
 
 This workshop functioned as a more developed pilot of methods that we
 already shared in earlier pilots (at PLoP 2021, at Oxford Brookes
@@ -393,79 +409,85 @@ anticipation.
 
 \subsection{Input patterns} \label{case1-inputs}
 
-\emph{A small selection of patterns describing the workshop
-activities, based on the more informal descriptions in our playbook,
-were shared with workshop attendees in the form of “pattern cards”,
-with which we transparently structured the workshop activities.  A
-selection of these are shown in Figure \ref{cards}.  Several of these
-are detailed below, along a few more-abstract patterns that
-characterise the process.}
+\emph{The workshop activities were presented to workshop attendees in
+the form of “pattern cards”.  A selection of these appear in Figure
+\ref{cards}; several are detailed below, along with some more-abstract
+patterns which were written down after the fact, but which characterize the
+process that was used on the day.  The full collection of cards shared
+with participants is available
+online.\footnote{\url{https://hyperreal.enterprises/open-future/}}}
+\emph{New cards were handed out for each phase of the workshop (for
+the itinerary, see Section \ref{first-workshop-itinerary}), and were
+color-coded accordingly.}
 
 \begin{figure}
   \includegraphics[width=.9\textwidth,page=3,]{4-patternsa.pdf}
 \caption{A selection of the pattern cards we handed out to participants of the “Going Meta” workshop\label{cards}}
 \end{figure}
 
-\subsection*{DÉRIVE COMIX{\hfill (s)}}
-
-\textbf{Context} you want to develop some future scenarios to explore with a group.\newline
-\textbf{If} you have an group BUT everyone has their own experiences;\newline
-\textbf{Then} Gather data.  For example: go for a walk \cite{debord},  or just look out the window wherever you are.  (Alternatively, close your eyes and conduct a mental exploration of your selected theme: what do you see in “your mind’s eye?”) Document what you see.  Follow up by preparing your materials to share in a succinct fashion, e.g., as photos, a screenshot, slides, sketches, a zine, a map, or some PostIt\textsuperscript{\textregistered} notes.
+\input{input-patterns/derive-comix.tex}
 
 \smallskip
-\noindent \emph{By itself, looking to the immediate surroundings only
+\noindent \emph{By itself, looking at the immediate surroundings only
 gives an imperfect picture of how to develop a future scenario.
 Direct observations might include little to no evidence of, say,
 top-level government policy which likely is a major factor in the
-future.  Two further patterns access more levels of meaning.}
+future.  Two further patterns work together to access more levels of
+meaning:}
 
-\subsection*{MEANING MAP {\hfill\cognitive}}
+\input{input-patterns/meaning-map.tex}
 
-\textbf{Context} We have collected images describing people’s worlds
-(see {\sc Dérive Comics}).\newline \textbf{If} you want to distill
-shared meaning BUT everyone has their own experience;\newline
-\textbf{Then} talk together about the problems and opportunities that
-everyone sees.  Maybe some of these will cluster together, or maybe
-everyone will have their own different perspective: that’s OK.  You
-can use these different viewpoints to get everyone on the same
-page.\newline\smallskip
+\input{input-patterns/reinfuse-expertise.tex}
 
-\subsection*{REINFUSE EXPERTISE {\hfill \motor}}
+\smallskip
+\noindent \emph{The core process of informal sharing, map-making and
+sharing knowledge works well in small groups.  A further level of
+meaning can be accessed by sharing the key findings from small
+groups.}
 
-\textbf{Context} a group wants to build a {\sc Meaning Map}.\newline
-\textbf{If} everyone has experience as a citizen BUT they also have
-expertise;\newline \textbf{Then} begin by removing expertise to get
-everyone on the same page, and subsequently reinfuse expertise to
-enable richer and more complex thinking.\newline\smallskip
+\input{input-patterns/share-back.tex}
 
-\subsection*{PATTERN LANGUAGE COMPONENTS {\hfill \sensory}}
+\smallskip
+\noindent \emph{This nested process of sharing is intended to surface
+the core themes that the group finds important.  In CLA terms, the
+contents of the {\sc Share Back} are key inputs for the Myth layer.  A
+facilitated whole-group discussion of how these core themes fit
+together can yield a {\sc Meaning Map} which expresses the group’s
+shared Myth.  At this point in the process, both the “zoomed out”
+whole-group map, and the “zoomed in” small-group maps are likely to
+contain ‘optative’ statements describing “the environment as we would
+like it to be” \cite{zave1997four}, potentially also including
+statements about what we wish not to have happen!  These are the seeds
+of ‘scenarios’, though the details of these scenarios will only become
+apparent as they are explored.  That happens in subsequent phases.
+The next two patterns describe the main tool we used to scaffold the
+exploration phase.}
 
-\textbf{Context} In a collaborative setting with people who are new to
-design patterns.\newline \textbf{If} new attendees are being invited
-to create new patterns BUT the context, problem, solution language
-brings assumptions that they may not be comfortable \newline \textbf{Then}
-introduce more dynamic keywords such as HOWEVER (to describe a gap or
-conflict), BECAUSE (to describe a set of operating causes), THEREFORE
-(to describe a rationale based on related data) , and SPECIFICALLY (to
-describe next steps), to help people build patterns piece by piece.
+\input{input-patterns/pattern-language-components.tex}
 
-\subsection*{FUNCTIONAL ROLES {\hfill \sensory}}
-
-\textbf{Context} When building a new set of design patterns.\newline
-\textbf{If} you have ideas about the components of a pattern BUT the
-pattern hasn’t been fully formed yet.\newline \textbf{Then} introduce
-different perspectives to critique the pattern as it
-develops.
+\input{input-patterns/functional-roles.tex}
 
 \smallskip
 
-\noindent \emph{In this workshop, we tried aligning the {\sc Pattern
-  Language Components} with {\sc Functional Roles}, as per “Phase II”
-in the Workshop Itinerary which follows (Section
-\ref{first-workshop-itinerary}).  In subsequent workshops, we decided
-to separate these two dimensions more distinctly.  Further details on
-roles are given in the next Case Study (Section
-\ref{second-case-study}).}
+\noindent \emph{In our workshop at Anticipation 2022, we tried
+aligning the {\sc Pattern Language Components} with {\sc Functional
+  Roles}, as per “Phase II” in the Workshop Itinerary which follows
+(Section \ref{first-workshop-itinerary}).  However, in subsequent
+workshops, we decided to separate these two dimensions more
+distinctly.  Further details on roles are given in the next Case Study
+(Section \ref{second-case-study}).  In “Phase IV” of the Anticipation
+workshop, we carried out a Project Action Review together with
+participants, following the steps detailed both in the card we handed
+out at the start of that phase (lower-right of Figure \ref{cards}) and
+in the itinerary.  More general uses of the PAR are detailed in
+“Patterns of Patterns” \cite{patterns-of-patterns-i}.  We note that
+within this workshop, its purpose was similar to the {\sc Share Back}
+pattern, bringing together meanings at the group level once again.  We
+had hoped that participants would come up with “next steps” that they
+would like to pursue themselves, but in fact, they used the
+opportunity primarily to share suggestions for us.  Details of the
+feedback are available
+online.\footnote{\url{https://groups.google.com/g/peeragogy/c/V-knbZkwhB0}}}
 
 \clearpage
 
@@ -477,168 +499,183 @@ roles are given in the next Case Study (Section
 
 \clearpage
 
-\subsection{Intermediate artefacts}
+\subsection{Intermediate artifacts}
 
 \begin{figure}[h]
 \begin{tabular}{c@{\hspace{1em}}c}
-\includegraphics[width=.45\textwidth]{AnticpationWorkshop.png}  & 
+\includegraphics[width=.45\textwidth]{AnticpationWorkshop.png}  &
 \includegraphics[width=.45\textwidth]{Anticipation-Mindmap.jpeg}
 \end{tabular}
 \caption{In the workshop, participants used cards to structure discussions, and facilitators took notes and made diagrams.\label{anticipation-workshop}}
 \end{figure}
 
-Particpants had different responses to the structured interactions.
-Some considered the workshop to have led to good conversations, but
-doubted if the manipulatives and other structures helped.
-Nevertheless, some participants did use the manipulatives in creative
-ways, such as asking each other to pass around the cards describing
-roles in order to better narrate the points they were making, and
-joining in on note-taking when the facilitators got up to move around
-the room.
+\noindent
+Figure \ref{anticipation-workshop} shows the workshop in process
+(left) and details of the notes taken by one of the facilitators
+(right).  Facilitators moved between facilitating small-group and
+whole-group activities.  In the ``Phase IV'' review, participants had
+different responses to our request to reflect on the workshop’s
+activities.  Some considered the workshop to have led to good
+conversations, but doubted if the manipulatives and other structures
+helped.  However, we observed that some participants had used the
+manipulatives in creative ways—such as asking each other to pass
+around the cards to better narrate the points they were making in the
+conversation.  (This experience highlights the ‘motor’ aspect of the
+{\sc Functional Roles}!)  No new design patterns were generated on the
+day, but follow-up reflections on the experience did suggest some
+patterns.
 
 \subsection{Output patterns}
 
-\emph{The framing our workshop within the Anticipation conference suggested a pattern that could be repeated in other settings:}
+\emph{The framing of our workshop relative to the Anticipation
+conference suggests a repeatable pattern:}
 
-\subsection*{GOING META{\hfill (c)}}\label{method1}
-\label{sec:org958ff04}
-
-\textbf{Context} In the course of working on a project
-together.\newline \textbf{If} we find a \textit{gap} between our
-ideals and our methods;\newline \textbf{Then} Try “going meta”, to
-explore how the project’s methods can be applied to itself.\newline
-\textbf{Example} In a community that usually focuses on anticipating
-the future for others, try inviting members of the community to
-anticipate the future of the community.
+\input{input-patterns/going-meta.tex}
 
 \medskip
 
 \noindent \emph{Reflecting on the attendees’ contributions, both in
 terms of their concrete comments about the Anticipation community as
-well as the way they interacted within the workshop gave rise to the
-following proto-pattern:}
+well as the way they interacted within the workshop (e.g., by
+contributing to note-taking and by leading conversations as the
+facilitators moved around the room) gave rise to the following
+proto-pattern:}
 
-\subsection*{💎 INCREASE PARTICIPANT CONTROL {\hfill \motor}}
-
-When organising a collaborative activity, participants should not
-remain only a audience, or only deliver scripted lines.  Give them
-increasing responsibility.
+\input{input-patterns/increase-participant-control.tex}
 
 \medskip
 
 \noindent \emph{Looking back at some remove, we can also notice a
 pattern that relates the work in this section to the paper:}
 
-\subsection*{💎 PILOT TO ANTICIPATE {\hfill \sensory}}
-
-Now invoking the {\sc Going Meta} pattern in the context of our work
-on this paper, we reflect that our strategy of piloting our workshop
-methods was the way we choose to anticipate the issues likely to arise
-in future iterations of the workshop.
+\input{input-patterns/pilot-to-anticipate.tex}
 
 \newpage
-\subsection{Diagrammatic Summary}\label{illustrative_diagram}
-The following diagram shows how the new {\sc Going Meta} pattern was
-synthesised together with three patterns that were present in the
-workshop context, namely {\sc Dérive Comix}, {\sc Meaning Map}, and
-{\sc Reinfuse Expertise}.  Some new patterns can be worked out in
-advance of the workshop, however, following the PLACARD method, the
-synthesis of new patterns typically makes use of the “open world” of
-the workshop and its context.
+\subsection{Diagrammatic summary of the “PLACARD” process (now “Open Future Design”)}\label{illustrative_diagram}
+The diagram in Figure \ref{alex-diagram} shows how the new patterns
+like {\sc Going Meta} and {\sc Increase Participant Control} would be
+synthesized by following the PLACARD method.  Our “Open Future Design”
+workshop made explicit use of DPL and PAR, though in this pilot it
+only touched on CLA.  However, the sensory, cognitive, and motor
+dimensions of PLACARD were brought into play with the patterns {\sc
+  Dérive Comix}, {\sc Meaning Map}, and {\sc Functional Roles}.
 
 \begin{figure}[h!]
-  \includegraphics[width=.8\textwidth,page=3,trim={2cm 8.5cm 1.6cm 2cm},clip=true]{alex_thoughts}
-  \caption{Relationships between sensory, cogitive, and motor patterns (paralleling {\scitshape MB Drawing a Map} from \citet{iba2016pattern}), here illustrating the synthesis of a new pattern relative to existing patterns\label{alex-diagram}}
+  %  \includegraphics[width=.8\textwidth,page=3,trim={2cm 8.5cm 1.6cm 2cm},clip=true]{alex_thoughts}
+\includegraphics[width=.8\textwidth]{alex-image-updated.png}
+  \caption{Relationships between sensory, cognitive, and motor patterns (paralleling {\scitshape MB Drawing a Map} from \citet{iba2016pattern}), here illustrating the potential for the space of patterns to grow as these methods are applied within a domain.\label{alex-diagram}}
 \end{figure}
 
 \clearpage
 
 \section{Case Study 2: Public Space for Public Health}\label{second-case-study}
 
-This workshop was commissioned by Abby Tabor as part of her project
+This workshop was commissioned by co-author Abby Tabor as part of her
+research project at the University of the West of England on
 “Designing urban environments for human health: from the microbiome to
 the metropolis”.  The aim was to gather attendees with an interest in
 the project themes and work together to envision next
 steps. Elaborations of these were developed by participants, and were
-organised by facilitators using a software tool based on Org Roam and
+organized by facilitators using a software tool based on Org Roam and
 Org Roam UI.
 % \footnote{Demo: \url{https://hyperreal.enterprises/bristol}}
 
+Alongside the patterns from our Anticipation pilot, here looked for
+new methods to {\sc Increase Participant Control}.  In particular, we
+generated some further articulations of the {\sc Functional Roles}
+that would help with this.  The roles presented come with mnemonic
+symbols based on the chess set: at the workshop, participants were
+provided with additional physical manipulatives, i.e., the chess
+pieces that correspond to the symbols here, along with new pattern
+cards similar to those in Figure \ref{cards}, featuring the
+descriptions here.  As mentioned previously, in the Anticipation
+pilot, the roles were aligned with the {\sc Pattern Language
+  Components}.  For example, the old {\sc Kaij\=u Communicator} role
+(here, renamed and adapted as the “{\sc Wrinkler}”) had final say over
+the challenges implied by the ‘however’ keyword.  In still-earlier
+pilots, the roles were assigned more elaborate responsibilities, and
+participants would receive a brief training for the role prior to
+taking it on.  For example, the {\sc Designer} role (now dropped
+entirely) was briefed on a specific collection of design patterns.  As
+presented in this workshop, the roles were strictly functional and
+were not the focus of role play as such.  Rather, an attendee would
+fill a given role momentarily within a conversation, while remaining
+fully themselves.
+
 \subsection{Input patterns}
 
-Alongside the main components of the initial workshop, we looked for
-new methods to {\sc Increase Participant Control}.  In particular, we
-generated some further articulations of the {\sc Functional Roles} to
-help with this.
+\emph{Alongside the descriptions of the roles that were given to
+participants (again with pattern cards), the reader may refer to Table
+\ref{mnemonic-for-manipulatives} which explains the mnemonic meaning
+of the chess pieces which accompanied each role description.  A
+similar informal description of the roles was also given to
+participants.}
 
-The patterns are presented here with a mnemonic symbol based on the
-chess set; at the workshop, participants were provided with physical
-manipulatives from a chess set that helped them get a grasp on the
-roles, along with new pattern cards with the text on.
+\begin{table}[h]
+\begin{tabular}{llp{.5\textwidth}}
+\textbf{Role} & \textbf{Manipulative(s)} & \textbf{Explanation}\\ {\sc
+  Time Traveler} & {\chess ♕} & In chess, the Queen can move linearly
+in any direction: forward, backward, and diagonally.  Similarly, the
+{\sc Time Traveler} role ‘moves’ both backwards and forwards in time,
+and also explores the conditions that appear at those points in
+time.\\
 
-\subsection*{TIME TRAVELLER {\chess ♕} {\hfill \sensory}}
+{\sc  Analyst} & {\chess ♗}, {\chess ♝} & In chess, there are two Bishops, both of which move diagonally, so that both are restricted to different colored squares. Here the {\sc Analyst} role divides its attention across two different spheres: articulations within the current challenge, and articulations of this challenge relative to other challenges.  \\
 
-\textbf{Question} \emph{What has happened in the past, what could
-happen in the future?}\newline
-\textbf{Role} To provide historical context and
-anticipate alternate futures.
+{\sc Wrinkler} &  {\chess ♘} & In chess, the Knight moves in a skewed fashion: in order to go in one direction, it must also go a little bit in another direction.  The {\sc Wrinkler} role, similarly, looks at how a given strategy might go askew, due to unintended consequences or otherwise.\\
 
-\subsection*{WRINKLER {\chess ♘} {\hfill \motor}}
+{\sc Linker} &  {\chess ♖} & In chess, the Rook moves any distance, as long as it goes in a straight line.  The {\sc Linker} role, similarly, can record a link between any two related concepts.  Since all concepts are potentially related in some fashion, the {\sc Linker} focuses on making \emph{useful} connections.\\
 
-\textbf{Question} \emph{What could go wrong? }\newline
-\textbf{Role.} Consider what might derail or counter
-the proposed solution.  Each wrinkle can be assigned a level of
-perturbation (from low to high).
+{\sc Reflector} &  {\chess ♔} & In chess, capturing the King means the end of the game, so players are concerned throughout with any threat to their King.  Here, the {\sc Reflector} role senses how the discussion of a given scenario is progressing and when it would be good to draw it to a close and move on. 
+\end{tabular}
+\caption{Mnemonic for manipulatives based on the chess set\label{mnemonic-for-manipulatives}}
+\end{table}
+
+
+\input{input-patterns/time-traveller.tex}
+
+\input{input-patterns/wrinkler.tex}
+
+\input{input-patterns/analyst.tex}
 
 %\textbf{Example} Everyday roadmap languages include both iconic map and road sign symbols; when people are confused or lost they may ask for help or try to find their own way back to the road using other informal languages.
-\subsection*{ANALYST {\chess ♗♝} {\hfill \cognitive}}
-
-\textbf{Question} \emph{What are the moving parts?}\newline
-\textbf{Role 1} Consider the current challenge and all the components
-of the potential solution (actors, resources, institutions). Identify
-and orchestrate the dynamic network of these components.\newline
-\textbf{Role 2} Consider the other challenges specified beyond the
-current focus.  Identify and orchestrate the integration of these
-components relevant to the present challenge.
 
 \smallskip
 
-\noindent \emph{(We also characterised some roles which would be
+\noindent \emph{(We also characterized some roles which would be
 filled by offsite and onsite facilitators.)}
 
-\subsection*{FACILITATOR ROLES {\hfill \cognitive}}
-\textbf{Context} Developing a collection of interrelated design
-patterns.\newline \textbf{If} you are getting ideas from participants
-who play {\sc Functional Roles} BUT the ideas aren’t all connected
-with each other in a structured way.\newline
-\textbf{Then} introduce
-facilitator roles to help structure the collection.\newline
-\textbf{Specifically}, {\sc Linkers}, and {\sc Reflectors} are two
-roles that we have found useful.
+\input{input-patterns/facilitator-roles.tex}
 
-\emph{(The following patterns describe functions that were filled by
-offsite and onsite facilitators.)}
+\smallskip \noindent \emph{The following patterns describe specific
+functions which were filled by offsite and onsite facilitators.}
 
-\subsection*{LINKERS {\chess ♖}{\hfill \sensory}}
+\input{input-patterns/linkers.tex}
 
-\textbf{Question}
-\emph{How do proposed scenarios build into patterns across layers, and how do they interact within the constellation?}\newline
-\textbf{Role.} Data wrangling as it comes in, providing visualisation of patterns and interconnections.
+\input{input-patterns/reflectors.tex}
 
-\subsection*{REFLECTORS {\chess ♔}{\hfill \cognitive}}
+\smallskip \noindent\emph{In the spirit of {\sc Increasing Participant
+  Control}, the {\sc Facilitator roles} could be distributed to
+participants, though doing so in a future workshop would require
+spending more time on training, and potentially also improved tooling
+that would support non-expert users.  A related ambition that we did
+not realize within the scope of the “Designing urban environments for
+human health” project was the creation of a wiki, which would have
+been a place to share updates and reportage on collaborative work
+around the possible actions surfaced during the workshop.  Instead,
+the notes taken by off-site facilitators were presented back to
+participants in a (non-editable) wiki-like prototype.}
 
-\textbf{Question} \emph{How is the scenario evolving?}\newline
-\textbf{Role} To appraise each developing scenario, provide a format for reflection (e.g., PAR), make decision to continue, reset, end.
-
+\clearpage
 \subsection{Itinerary}
 
 \begin{mdframed}[backgroundcolor=blue!50,linecolor=blue!50]
   \noindent\includegraphics[width=\textwidth,trim={1cm 3.2cm 1cm 4.5cm},clip=true]{bristol}
 \end{mdframed}
 
-\subsection{Intermediate artefacts}
+\subsection{Intermediate artifacts}
 
-Intermediate artefacts generated within the workshop included mindmaps
+Intermediate artifacts generated within the workshop included mindmaps
 created with participants, on paper.  We used a graphical template
 following the outline of the Causal Layered Analysis layers to explain
 the workshop’s overall workflow, and also asked participants to use a
@@ -649,100 +686,78 @@ share-back process, and in Phase II, developed them further in the
 form of shared future stories, outlining paths to action.  Photos in
 Figure \ref{ExampleParticipantPattern} show the movement from:
 \begin{itemize}
-  \item initial sketching at the start of Phase I, beginning at the
+  \item Initial sketching at the start of Phase I, beginning at the
     \emph{litany} level, within small groups (upper left), to:
-  \item a collection of themes shared across groups at the end of
+  \item A collection of themes shared across groups at the end of
     Phase I, to create a {\sc Meaning Map} which, in CLA terms, is
     intended to bring everyone into a shared \emph{myth} layer (lower
     left), on to:
-  \item Phase II work using {\sc Pattern Language Components},
-    to identify both general and specific possibilities for action.
+  \item Phase II work using {\sc Pattern Language Components}, to
+    identify both general and specific possibilities for action around
+    a theme.
 \end{itemize}
 
 \begin{figure}
   \includegraphics[width=\textwidth]{PatternProcess.png}
-  \caption{Use of manipulatives to create new patterns (paralleling {\scitshape MA 1.3 Mining Atmosphere} from \citet{iba2016pattern}) \label{ExampleParticipantPattern}}
+  \caption{Use of diagrams and manipulatives to create meaning maps and new patterns (paralleling {\scitshape MA 1.3 Mining Atmosphere} from \citet{iba2016pattern}) \label{ExampleParticipantPattern}}
 \end{figure}
 
-\clearpage 
+\clearpage
 
-\subsection{Output patterns} ~
-\smallskip
-
-\noindent \emph{Reflecting on the contributions of the workshop
-convenor and special guest, we observed a pattern that could be used
-in subsequent workshops.}
-
-\subsection*{CONTEXT SETTING {\hfill \cognitive}}
-\textbf{Context} A workshop or other working context has been
-convened.\newline \textbf{If} the facilitators have ideas that they
-would like to explore with attendees BUT these ideas are not top of
-mind for attendees.\newline \textbf{Then} do some context-setting,
-e.g., showing videos, giving a short talk about why people have been
-invited and describe the hoped-for outcomes.
-
-\smallskip
-
-\noindent \emph{Participants created several patterns by making use of
+\subsection{Output patterns} \emph{Participants created several patterns by making use of
 the {\sc Pattern Language Components} and {\sc Functional Roles}.
-They presented below in  proto-pattern form.  These summaries
-condense details which developed in the workshop using manipulatives
-(cards and chess pieces), which afforded greater articulation, but,
-perhaps, less coherence.}
+Here, the material shared by participants is summarized and condensed
+in proto-pattern form.  For an example showing how the patterns looked
+in the workshop, see the right-most image in Figure
+\ref{ExampleParticipantPattern}, which details the participants’
+articulation of the {\sc Funding of Public Space} pattern (with help
+from a workshop facilitator).}
 
+\input{input-patterns/contested-space.tex}
 
-\subsection*{💎 CONTESTED SPACE{\hfill \sensory}}\label{pat:contested-space}
+\input{input-patterns/rebalance-social-services.tex}
 
-So-called public space doesn’t always feel welcoming to all members of the public.  It can be overrun with antisocial behaviour.  It can feel exclusionary, or uninviting.  It can be the site of conflict.  Although the uses of public space are complex, each space need not to support every use equally.
+\input{input-patterns/funding-of-public-space.tex}
 
-\subsection*{💎 REBALANCE SOCIAL SERVICES{\hfill \motor}}\label{pat:rebalance-social-services}
+\smallskip
+\noindent \emph{Reflecting on the contributions of the workshop
+convenor and special guest, we observed a simple pattern that would be
+useful in subsequent workshops.}
 
-Welfare-related services should be supplied in balance with local needs, though they often are not. Can varied expertise be integrated in a similar way to the domain-specific skills practised by Médicins Sans Frontièrs to address complex local challenges?
+\input{input-patterns/context-setting.tex}
 
-\subsection*{💎 FUNDING OF PUBLIC SPACE{\hfill \cognitive}}\label{pat:funding-of-public-space}
-
-Even though public space is known to increase wellness in the population, well-being priorities that would lead to increased funding for public space aren’t universally adopted.  In order to make the benefits of such investment clear, increase transparency around investments in public welfare, e.g., create register of impacts of local social enterprises.
-
-\medskip
-
-\noindent \emph{The right-hand panel of Figure
-\ref{ExampleParticipantPattern} shows how participants elaborated the
-    {\sc Funding of Public Space} proto-pattern on the day, using the
-    {\sc Pattern Language Components} that we provided as keywords on
-    index cards; the others listed above were diagrammed out
-    similarly, at other tables.)}
-
-\medskip
-
-\subsection{Remark on the Roles of Roles}
-The three proto-patterns {\sc Contested Space}, {\sc Funding of Public
-  Space}, and {\sc Rebalance Social Services} each were formed, in
-part, through the influence of the {\sc Time Traveler}, {\sc Analyst}
-and {\sc Wrinkler} roles.  Their contents have significant
-differences, expressing the different compositions and interactions of
-the workshop groups.
-
-Relevant next steps could include revision and re-articulation of the
-proto-patterns in more formal terms, and gathering evidence that would
-support or refute the value of specific interventions.  The future
-operations might be supported by new {\sc Functional Roles}, or by
-further elaborations of those already described above, such as through
-creating or combining roles.  Indeed, review (e.g., during a PAR) of
-the contributions to the process that were made by different roles
-could help to articulate the need and plan for evolution at the
+\subsection{Further remark on the Roles of Roles}
+Relevant high-level actions would revise and re-articulate the
+proto-patterns above in more formal terms, alongside with a process of
+evidence-gathering that would support or refute the value of specific
+interventions that ramify the patterns in their local context.  These
+future operations might be supported by new {\sc Functional Roles}, or
+by further elaborations of those already described above, such as
+through creating or combining roles.  Indeed, review (e.g., during a
+PAR) of the contributions to the process that were made by different
+roles could help to articulate the need and plan for evolution at the
 process level.
 
 Presently, with Table \ref{active-inference-factors} we draw attention
-to the way in which the three main participant roles operationalise
-key aspects of the Active Inference framework \cite{SMITH2022102632}.
+to the way in which the three main participant roles operationalize
+key aspects of the Active Inference Framework (see
+\citet{SMITH2022102632} for a primer on the key concepts in AIF).  A
+synthesis of DPL and AIF would go beyond the classical neuroscientific
+language that underpins PLACARD.  It would integrate something like
+our {\sc Functional Roles} roles into patterns themselves, so that
+given pattern would be able to ‘sense’ when it needs to be revised to
+match a previously-unexpected reality; or, similarly, a collection of
+patterns would sense when a new pattern needs to be created, when an
+existing pattern should be applied, or when the structure and function
+of the generative model needs to change in more radical ways.
 
 \begin{table}
-\begin{tabular}{ll}
-{\sc Time Traveller} & contributes to elaborating \emph{the prior
+\begin{tabular}{lp{.5\textwidth}}
+{\sc Time Traveler} & contributes to elaborating \emph{the prior
 belief over states} and the \emph{likelihood of specific
 observations}.\\
 
-{\sc  Analyst} & contributes to elaborating the \emph{generative model}.\\
+{\sc  Analyst} & contributes to elaborating the \emph{generative model}, with the division between inward and outward articulations corresponding to \emph{internal} and \emph{external}-facing (i.e., \emph{sensory} and \emph{active}) states.\\
 
 {\sc Wrinkler} & contributes to elaborating the \emph{factor of surprisal}.
 \end{tabular}
@@ -760,40 +775,30 @@ observations}.\\
 This workshop was developed as an “Away Day” for faculty and staff
 members at Oxford Brookes University.  The aim of the workshop is to
 elaborate the institution’s open research strategy relative to its
-existing organisational strategy.  Methodologically, this workshop
+existing organizational strategy.  Methodologically, this workshop
 builds on a pre-seeded Org Roam network of interlinked themes and an
 additional activity that enlists attendees in taking concrete actions
 on the identified next steps.  This itinerary reused the language
 “experts to citizens”, “citizens to action” from the previous workshop
-(with a slight variation suited to the context).  These phases mirrors
-the {\sc Dérive Comix}—{\sc Meaning Map}—{\sc Reinfuse Expertise}
-structure introduced earlier.
+(with a slight variation suited to the context).  It is worth
+remarking here that these phases mirror the {\sc Dérive Comix}—{\sc
+  Meaning Map}—{\sc Reinfuse Expertise} structure introduced in the
+first case study, and that, in CLA terms, the effect is a journey from
+\emph{litany-to-myth-back-to-litany}, with the new litany taking the
+form of potential actions.
 
 \subsection{Input Patterns}
 
-\subsection*{DO YOUR RESEARCH{\hfill\sensory}}
-\textbf{Context} Prior to beginning a formal workshop or other participatory research activity.\newline
-\textbf{If} it looks like it will be possible to do participatory research BUT the participants haven’t begun speaking with each other yet.\newline \textbf{Then}
-start doing the research in a more centralised way before inviting direct collaboration, in order to give participants something to engage with.\newline
-\textbf{Example} In the current setting, this pre-research included 1-to-1 interviews with about half of the invitees, as well as internet research to find and explore related scenarios developed by others.\footnote{\url{https://royalsociety.org/topics-policy/projects/research-culture/changing-expectations/visions-of-2035/visions-of-2035-materials/}}
+\input{input-patterns/do-your-research.tex}
 
-\subsection*{STRUCTURE CONVERSATIONS{\hfill\cognitive}}
-\textbf{Context} Having convened a workshop or other participatory research activity.\newline
-\textbf{If} unstructured discussions are likely to take lots of time but without yielding concrete benefits.\newline \textbf{Then}
-structure the discussions around shared interests to move things forward more effectively.\newline
-\textbf{Example} At this workshop, we decided to group participants around tables according to the faculty where they were employed (or most closely aligned, in the case of university-level support staff).
+\input{input-patterns/structure-conversations.tex}
 
-\subsection*{THE FUTURE BEGINS NOW{\hfill\motor}}
-\textbf{Context} Having developed possible next steps.\newline
-\textbf{If} appears that leaving without concrete commitments means
-concrete actions are less likely to take place.\newline \textbf{Then}
-introduce early actions within the
-collaborative setting to create commitment.\newline
-\textbf{Example} One way to build commitment would be to ask people to develop and share a method for a small-scale experiment that they plan to carry out.
+\input{input-patterns/the-future-begins-now.tex}
 
 \smallskip
-\noindent \emph{(In the event, there was not time to do the activities described
-in {\sc The Future Begins Now} within this workshop.)}
+\noindent \emph{(In the event, there was not enough time to do the
+activities described in {\sc The Future Begins Now} within the
+workshop.)}
 \clearpage
 
 \subsection{Itinerary}
@@ -804,49 +809,100 @@ in {\sc The Future Begins Now} within this workshop.)}
 
 \clearpage
 
-\subsection{Output Patterns}
+\subsection{Intermediate artifacts}
 
-\begin{figure}
-  \includegraphics[width=\textwidth,trim={0 0 0 2cm},clip=true]{org-roam-screenshot.png}
-  \caption{Screen shot of Org Roam UI, showing the development process
+Figure \ref{brookes-workshop} shows how the {\sc Pattern Language
+  Components} were used in the second phase of the workshop, building
+on a CLA-based discussion that developed the {\sc Meaning Map} in the
+workshop’s first phase (background, right).  In this case, the
+keywords and manipulatives corresponding to {\sc Functional Roles}
+(cf. Table \ref{mnemonic-for-manipulatives}) were not used to spell
+out entire draft patterns (as in Figure
+\ref{ExampleParticipantPattern}), but rather, to generate a network of
+relations.
+
+\begin{figure}[h]
+\begin{tabular}{c@{\hspace{3em}}c}
+\includegraphics[trim={.2cm 0cm 0cm 2cm},clip=true,width=.4\textwidth]{fragment1.jpg}  &
+\includegraphics[trim={0cm 1.4cm 0cm 2cm},clip=true,width=.4\textwidth]{fragment2.jpg}
+\end{tabular}
+\caption{The {\sc Pattern Language Components} were used organically within the workshop.\label{brookes-workshop}}
+\end{figure}
+
+Figure \ref{Org-Roam-Screenshot} shows how material was then drawn
+together, using Org Roam to analyze the workshop themes (per the {\sc
+  Linker} pattern), further elaborating the {\sc Meaning Map}.
+Contents of the paper-based diagrams, like those in Figure
+\ref{brookes-workshop}, were condensed and edited in the digital
+notes, rather than represented verbatim.  For example, the idea of
+reintroducing a ``common room'' (Figure \ref{brookes-workshop}, left)
+is folded into the ``Research Environment'' node, along with the
+challenge of holding conversations when “people aren’t here” in
+person.  The digital notes also provided an opportunity to further
+correction and synthesis of links which hadn’t been spelled out so
+directly with the manipulatives, e.g., the name ``Richard Owens''
+[sic] was noted down in the workshop (Figure \ref{brookes-workshop},
+right), and is represented in the digital notes as Richard Owen, key
+proponent of responsible innovation \cite{Owen2013}, within the
+``responsible'' node.
+
+The overall process illustrated in Figure \ref{Org-Roam-Screenshot}
+moves in the opposite direction of \emph{Figures 3-7} of
+\citet{iba2016pattern} (insofar as those figures complexify a tree as
+a graph).  Here, we move from an interlinked graph of topics to a
+summary map in tree form, represented here by the Outline of an Open
+Research Action Plan node.  This process relates to the interplay of
+informal and formal work, elaborated in Appendix
+\ref{synthesis-of-form}.
+
+In brief, the organic, playful, interactions within the workshop were
+useful in creating the more formal output (a draft policy document)
+precisely because these interactions were informed by a suitable
+metalanguage, including the apparatus of Causal Layered Analysis, the
+{\sc Pattern Language Components}, the {\sc Functional Roles}, the
+{\sc Meaning Map}, and other patterns described so far in the paper.
+By contrast, the acronym ``SOLACE'' mentioned in the itinerary—which
+aims to describe an approach to research that is grounded in
+organizational values “Success, Openness, Learning by doing,
+Adaptability and Creativity, and Equal opportunity”
+\cite{corneli-varuf}—was primarily useful for {\sc Context Setting}.
+That level of analysis only provides a “mental picture”, in the terms
+of \citet{alexander1964notes}.  A hypothetical Open Research Action
+Plan based on stakeholder interviews and the “SOLACE” concept, but
+omitting the workshop experience, might express the university’s
+values, but it would not draw on the same richness of meaning, nor the
+same level of practical detail.
+
+\begin{figure}[h]
+  \includegraphics[width=.9\textwidth,trim={0 0 0 2cm},clip=true]{org-roam-screenshot.png}
+  \caption{Screenshot of Org Roam UI, showing the development process
     leading to a draft Open Research Action Plan (ORAP).  Color-coding
-    is: (Gray) Background themes and concepts based on interviews;
-    (Purple) Selected themes from the background which became the
-    focal themes in the workshop; (Yellow) Workshop themes and
-    concepts; (Red) Key points of organization for workshop themes,
-    including discussions per faculty as suggested by {\sc Structure
-      Conversations}. The node “Outline of an Open Research Action
-    Plan” includes the ORAP, instantiated here as a bullet-point
-    outline, with links to all of the workshop outputs.
+    is: (Gray) Background themes and concepts based on interviews
+    (cf. {\sc Do Your Research}); (Purple) Selected themes from that
+    background material which became the focal themes in the workshop;
+    (Yellow) Workshop themes and concepts; (Red) Key points of
+    organization for workshop themes, including discussions per
+    faculty as suggested by {\sc Structure Conversations}. The node
+    “Outline of an Open Research Action Plan” includes the ORAP,
+    instantiated here as a bullet-point outline, with links to all of
+    the workshop outputs.
     \label{Org-Roam-Screenshot}}
 \end{figure}
 
-\subsection*{💎 STRUCTURE OUTPUTS{\hfill\motor}}
-Having gathered themes from a participatory project, they may have
-some explicit (e.g., because of how the information was gathered,
-cf. {\sc Structure Conversations}).  Additional structure can be
-created, if you link intermediate artefacts into a relevant template.
+\subsection{Output Patterns}
+
+\emph{The process of condensing wide ranging interviews and workshop
+discussions into a draft report suggests the following broadly useful
+pattern:}
+
+\input{input-patterns/structure-outputs.tex}
 
 \smallskip
+\noindent\emph{Our way of working with {\sc Pattern Language
+  Components} within this workshop suggests another pattern going in
+the opposite direction of formality:}
 
-\noindent \emph{In this setting, we used a template provided by the UK
-Reproducibility Network for developing an Open Research Action Plan
-(ORAP) \cite{orap-template} — itself, essentially, a complex pattern.
-We linked the themes discussed in the workshop into this template, to
-form a bullet-point draft of an action plan, incorporating the next
-steps and concerns raised by attendees.  We did not specifically
-include all of the background that appeared in our earlier interview
-(cf. {\sc Do Your Research}).  Figure \ref{Org-Roam-Screenshot} shows
-all of this material in an intermediate form, where we used Org Roam
-to analyse the workshop themes (per the {\sc Linkers} pattern, above).
-The process illustrated in this figure moves in the opposite direction
-of \emph{Figures 3-7} of \citet{iba2016pattern}, insofar as they
-complexify a tree as a graph, whereas we here move from an interlinked
-graph of topics to a summary map in tree form.  This relates to the
-interplay of informal and formal work, elaborated in Appendix
-\ref{synthesis-of-form}.}
-
-
+\input{input-patterns/destructure-patterns.tex}
 
 %% \subsection*{PLACARD: A Synthesis of PAR, CLA, and DPL}
 %% \label{sec:orgd924cd6}
@@ -876,7 +932,7 @@ interplay of informal and formal work, elaborated in Appendix
 \subsection{Introduction the course from the instructor, Mary Tedeschi}
 \input{mary-section}
 
-\subsection{Our use of “Patterns of Patterns” within the course}
+\subsection{Our use of “Patterns of Patterns” within the course, by guest lecturers Raymond Puzio, Joe Corneli, and Charlie Danoff}
 \label{pop1-in-cis9590}
 We used the paper “Patterns of Patterns” as a focal text with three
 successive cohorts of CIS 9590 students.  The course syllabus is
@@ -887,8 +943,7 @@ primarily on the latest iteration of the course (Spring 2023), in
 which we made the most explicit use of the methods described above.
 Figure \ref{cis-9590-anticipations} shows some of our anticipations of
 the relevant concerns that apply in this context.
-
-Each year, students asked many thoughtful \emph{questions} about the
+Each semester, students asked many thoughtful \emph{questions} about the
 paper; they also produced their own \emph{written response} to the
 paper, engaging the original paper in depth; and in the latest run, we
 offered some in-class \emph{exercises} based on the workshop methods
@@ -904,98 +959,136 @@ technology”.  It is worth highlighting that while our paper did touch
 briefly on the theme of emerging technology, the students considerably
 elevated the importance of that theme in their feedback.
 
-\begin{figure}[h]
-  \begin{tabular}{cc}
-    \includegraphics[width=.45\textwidth]{UsCLA.png} &
-    \includegraphics[width=.45\textwidth]{ThemCLA.png}
-  \end{tabular}
-\caption{Diagrams created before our first session with the CIS 9590 students, inspired by Causal Layered Analysis.  The diagrams describe our working context as guests in CIS 9590 (left), and our initial understanding of the students’ working context (right).\label{cis-9590-anticipations}}
+\subsection{Experience report by CIS 9590 student, Kajol Khetan}\label{sec:kajol-report}
+
+The PLACARD method emphasizes understanding the context, selecting an
+appropriate language or languages for thinking about problems in that
+context, and taking relevant actions to guide the development process.
+In our project work, we adapted the CLA component of this framework by
+identifying the layers relevant to our chosen problem, namely, to
+create a website that allows users to discover nearby coffee shops
+easily.  We identified the following layers for our analysis (each
+with several facets, see Figure \ref{kajol-box}): User Interface,
+Functionality, Data Flow, Infrastructure, and External Factors.
+
+\begin{figure}[h!]
+\begin{mdframed}
+\textbf{User Interface Layer}
+
+\textit{Analyzed user interactions}: Implemented an interactive map
+interface using JavaScript and integrated the Google Maps API.
+
+\textit{Designed elements}: Developed a responsive and visually appealing
+layout with markers representing coffee shops on the map.
+
+\textit{User experience}: Prioritized ease of use, ensuring smooth
+navigation, intuitive filtering options, and clear visual cues.
+
+\textbf{Functionality Layer}
+
+\textit{Core features}: Enabled users to search for coffee shops based
+on location and preferences.
+
+\textit{Functions/modules}: Implemented search functionality, marker
+clustering, and information display for each coffee shop.
+
+\textit{User feedback}: Incorporated user feedback to enhance
+features, such as real-time reviews and ratings integration.
+
+\textbf{Data Flow Layer}:
+Processed user inputs: Captured user location and
+preferences to provide relevant search results.
+
+\textit{Stored data}: Utilized a database to store coffee shop
+information, such as names, addresses, ratings, and reviews.
+
+\textit{Data display}: Dynamically populated the map and details
+sections with data retrieved from the database.
+
+\textbf{Infrastructure Layer}:
+
+\textit{Technology stack}: Utilized HTML, CSS, JavaScript, and Google
+Maps API for the front end; PHP and MySQL for the back end.
+
+\textit{Compatibility}: Ensured cross-browser compatibility and
+responsive design to cater to various devices.
+
+\textit{Server setup}: Hosted the website on a reliable server with
+efficient performance.
+
+\textbf{External Factors Layer}:
+
+\textit{User requirements}: Considered user preferences, such as
+coffee shop categories (e.g., vegan-friendly, Wi-Fi availability).
+
+\textit{Business goals}: Aligned with the goal of promoting local
+coffee shops and providing a convenient user experience.
+
+\textit{Market trends}: Incorporated emerging trends, such as
+real-time user reviews and social media sharing.
+
+\end{mdframed}
+\caption{Layers in the analysis of a coffee discovery website\label{kajol-box}}
 \end{figure}
 
-Building in part on these student responses, we will now present our
-reflections using the Causal Layered Analysis layers.  This is
-scaffolded by the two diagrams in Figure \ref{cis-9590-anticipations}.
+CLA guides us to look for \emph{causal relationships} operating within
+and between these layers.  In particular:
+\begin{itemize}
+  \item Changes in the User Interface layer influenced user engagement
+    and ease of interaction.
+  \item Adjustments in Functionality impacted the overall user
+  experience and satisfaction.
+  \item Data Flow optimizations directly affected the accuracy and
+    relevance of coffee shop information.
+  \item Infrastructure decisions impacted website performance and
+    responsiveness.
+  \item External factors influenced design choices and user
+    satisfaction.
+\end{itemize}
 
-\subsubsection{Litany}
-Initially our paper was introduced as a contemporary reading, relevant
-to the “CIS” theme.  Mary chose a contemporary paper in part because
-students would not be able to “cheat” in their reports, because our
-paper wasn’t described extensively on Sparknotes or similar.  Along
-with this (intentional) challenge, CIS 9590 students encountered a
-range of more or less predictable problems, e.g., many felt a lack of
-confidence with coding.  The students came to the course with a
-variety of different backgrounds (e.g., Python vs C++) which
-contributed to some friction with this course.
+Our adaptation of Causal Layered Analysis led to a comprehensive
+understanding of the website's components and their interdependencies,
+and facilitated a structured approach to development.  The nearby
+coffee shops website was successfully developed and deployed.  Users
+can input their location and receive a map display of nearby coffee
+shops, along with relevant information such as ratings, reviews, and
+operating hours.  Our group’s process could be condensed into an
+overall protopattern:
 
-\subsubsection{System}
-Whereas in our rounds of earlier participation we were more there for
-enrichment, in the most recent iteration our contributions were more
-closely integrated into the main activities of the course.  We
-attended more sessions, including one in which we attempted to run a
-short version of the workshop with attendees via Zoom.  Ongoing
-interaction saw us in an ‘in residence’ role, advising on various
-aspects of the projects.  Furthermore, Mary attended at least as many
-meetings of the Peeragogy project (one of the centres of development
-for PLACARD) as we attended sessions of the course, fostering an
-exchange of ideas and viewponts between these two contexts. In the
-short term, this led to productive synergy and, in the long term,
-could lead to our pedagogical and peeragogical initiatives becoming
-more integrated into a larger system. This collaboration continued
-post-semester, insofar as Mary invited the students to express
-interest in possible internships in the Peeragogy project.
+\input{input-patterns/adapt-layers-as-needed.tex}
 
-\subsubsection{Worldview}
-Students were thinking about their future careers.  What they wanted
-to get out of the course (e.g., becoming a well-paid data scientist or
-business leader) at times had some friction with the practical reality
-of the course requirements, in which they had to deliver a concrete
-hands-on working project, without being able to rely on employees.
-PLACARD wouldn’t be of much direct help with the technical challenges
-they faced with the Intel One platform, but we hoped it could help
-them organise their work in a sensible way.  The ideas underlying
-PLACARD informed our contributions to the course at various levels;
-for example, in a session with Mary in which we ‘workshopped’ CIS 9590
-with other peeragogues, discussants suggested adding more touchpoints
-for peer learning and feedback (\emph{\`a la} the PAR).
+%% 6. Discussion:
 
-\subsubsection{Myth}
-A deep metaphor within the classroom setting is \emph{pedagogy}.
-However, the methods that we brought as guests was more linked with
-our experience of \emph{peeragogy}.  In the new shared context, these
-two perspectives begin to integrate.  Mary as a host exercised the
-value of \emph{xenia} by bringing us into her course as guests.  The
-possibility of student internships within the Peeragogy project would
-create the reciprocal opportunity for further student practice with
-CIS skills in an applied context, helping to build tools and platforms
-for peer learning and peer production (including through use of
-pattern methods).  Indeed, the particular combination of peer learning
-and formal education developed here led us to wonder how far off the
-Peeragogy project might be from being able to support informal
-learning of relevant programming concepts (preliminaries to CIS 9590)
-or applied computing projects (an analogue of CIS 9590).  The
-students’ emphasis on the theme of ‘emerging technology’ suggested
-that whatever synthesis develops, it may include significantly
-upgraded technical components.
+%% The application of the CLA method facilitated a structured approach to
+%% development, ensuring that project requirements were met while
+%% adhering to best practices. The integration of design patterns
+%% streamlined development, leading to a user-friendly and responsive
+%% website.
 
-\subsection{Proto-patterns describing the experience, by a CIS 9590 student, Manny Singh}\label{sec:manny-protopatterns}
+%% 7. Lessons Learned:
+
+%% Through the project, we learned the importance of selecting
+%% appropriate design patterns based on the context and requirements. The
+%% CLA method guided decision- making and enhanced project management,
+%% resulting in a successful outcome. CLA highlighted the importance of
+%% systematically analyzing and optimizing each layer for a cohesive and
+%% effective user experience. Flexibility and adaptability were key in
+%% addressing challenges and meeting user needs.
+
+
+\subsection{Further proto-patterns describing the course experience, by CIS 9590 student, Manny Singh}\label{sec:manny-protopatterns}
 
 %% Introduction:
 %% During my final project class led by Professor Mary Tedeschi, the research paper 'Pattern of Patterns' and its authors played a pivotal role in shaping my project decisions. The authors' active engagement in our Zoom sessions provided invaluable insights into project layout, helped me avoid common mistakes, and encouraged a scalable and adaptable approach. Their active engagement and promises to come again in the following weeks to see progress on everyone’s individual project kept the butterflies, nervousness, and willingness to deliver all alive at the same time.
 
-\emph{The following proto-patterns summarise one student’s reflection
+\emph{The following proto-patterns summarize one student’s reflection
 on how our “active engagement and promises to come again in the
 following weeks to see progress on everyone’s individual project kept
 the butterflies, nervousness, and willingness to deliver all alive at
-the same time.”  Further inline commentary expands and analyses the proto-patterns using {\sc Pattern Language Components}.}
+the same time.”  Further inline commentary expands and analyzes the
+proto-patterns using {\sc Pattern Language Components}.}
 
-\subsection*{💎 ENGAGEMENT AND GUIDANCE{\hfill \motor}}
-The authors of ‘Pattern of Patterns‘ actively participated in our
-class, to share expertise and create a collaborative learning
-environment. Their presence allowed us to gain deeper insights into
-the paper's concepts and methodologies, leading to innovative project
-approaches. By closely studying the patterns of patterns identified in
-their research, I gained a fresh perspective on project organization
-and established a logical and coherent structure.
+\input{input-patterns/engagement-and-guidance.tex}
 
 \smallskip
 \noindent\emph{Notice that within this capsule summary there are at least two implied conflicts:}
@@ -1003,25 +1096,20 @@ and established a logical and coherent structure.
 \item \emph{Team work is required HOWEVER the ways to scaffold effective collaboration are not entirely obvious;}
 \item \emph{Project development is required HOWEVER project structure is not obvious.}
 \end{itemize}
-\emph{Our interactions with both the teacher and the students helped us theorise the confusion:}
+\emph{Our interactions with both the teacher and the students helped us theorize the confusion:}
 \begin{itemize}
-\item \emph{These difficulties exist BECAUSE participants do not have enough experience grappling with ‘worked examples’ (both learning best practices from successful examples, and learning by giving constructive feedback on less-successful examples).} 
+\item \emph{These difficulties exist BECAUSE participants do not have enough experience grappling with ‘worked examples’ (both learning best practices from successful examples, and learning by giving constructive feedback on less-successful examples).}
 \end{itemize}
 \emph{“Patterns of Patterns” provides some generic methods that can be applied to the domain-level problems.  Moreover, contact with the authors shifted the game, relative to simply reading the preprint.}
 \begin{itemize}
-\item \emph{THEREFORE, share some easy-to-understand general-purpose method with novices, and put them in regular contact with people who have significant experience with problems in the domains of project management and collaboration.} 
+\item \emph{THEREFORE, share some easy-to-understand general-purpose methods with novices, and put them in regular contact with people who have significant experience with problems in the domains of project management and collaboration.}
 \end{itemize}
 \emph{Thinking beyond the Spring 2023 CIS 9590 cohort to next steps, we need better ways to share this kind of experience:}
 \begin{itemize}
-\item \emph{SPECIFICALLY, can the Peeragogy project develop an internship/mentoring programme?  Respectively, can more touchpoints for mentoring and peer feedback be built into the CIS 9590 curriculum?} 
+\item \emph{SPECIFICALLY, can the Peeragogy project develop an internship/mentoring programme, and how would the design of such a programme be reflected in our design pattern catalogue?  Respectively, can more touchpoints for mentoring and peer feedback be built into the CIS 9590 curriculum?}
 \end{itemize}
 
-\subsection*{💎 AVOIDING MISTAKES{\hfill \cognitive}}
-The authors' insights helped me navigate common project development
-pitfalls.  Through their emphasis on effective documentation, regular
-testing, and thorough project planning, I was able to avoid costly
-errors.  Their guidance ensured a consistent progress trajectory and
-maintained the professionalism of my final project.
+\input{input-patterns/avoiding-mistakes.tex}
 
 \smallskip
 \noindent \emph{The nice features of “effective documentation, regular testing, and thorough project planning” might be interpreted in terms of PLACARD components:}
@@ -1042,12 +1130,7 @@ maintained the professionalism of my final project.
 CIS 9590 cohorts, and ask them to document the patterns they use.}
 \end{itemize}
 
-\subsection*{💎 SCALING AND ADAPTABILITY{\hfill \cognitive}}
-‘Pattern of Patterns’ underscored the importance of scalability and
-adaptability in project design.  By considering future technologies
-and incorporating modular elements, I aim to seamlessly adopt new
-advancements.  In particular, I focused on building a flexible
-framework that could easily accommodate emerging technologies.
+\input{input-patterns/scaling-and-adaptability.tex}
 
 \smallskip
 \noindent \emph{In the language we’ve been using internally,
@@ -1055,49 +1138,125 @@ framework that could easily accommodate emerging technologies.
 contexts’.}
 \begin{itemize}
   \item \emph{We want a system that will adapt to situations we haven’t encountered yet HOWEVER we need something reasonably specific and concrete in order to work in any given context}
-  \item \emph{BECAUSE we need to organise evolving complexity} 
+  \item \emph{BECAUSE we need to organize evolving complexity}
   \item \emph{THEREFORE develop a modular approach to design and development, and incorporate future scanning into the workflow}
   \item \emph{SPECIFICALLY let’s look for more ways to develop ‘alternative imaginaries’ for the Patterns of Patterns project}.
 \end{itemize}
 
-\subsection{Further reflections and next steps}\label{further-reflections}
+\subsection{Causal Layered Analysis of the CIS 9590 experience}
 
-Our anticipations (summarised in Figure \ref{cis-9590-anticipations})
-didn’t precisely match our reflections at the end of the course.  The
-missing steps on the way to the eventual synthesis could suggest
-further patterns, including elaborations on Manny Singh’s
-proto-patterns that would give them more specificity, and influence
-our participation in future cohorts.  We observe that when
-\emph{working across contexts}, many of the ‘forces’ at work in a
+\begin{figure}[h]
+  \begin{tabular}{cc}
+    \includegraphics[width=.45\textwidth]{UsCLA.png} &
+    \includegraphics[width=.45\textwidth]{ThemCLA.png}
+  \end{tabular}
+\caption{Diagrams created before our first session with the CIS 9590 students, inspired by Causal Layered Analysis.  The diagrams describe our working context as guests in CIS 9590 (left), and our initial understanding of the students’ working context (right).\label{cis-9590-anticipations}}
+\end{figure}
+
+We conclude this section with a summary reflection on our use of
+``Patterns of Patterns” within CIS 9590, using the (standard) Causal
+Layered Analysis layers.  This is scaffolded by the two diagrams in
+Figure \ref{cis-9590-anticipations}.
+
+\subsubsection{Litany}
+Initially our paper was introduced as a contemporary reading, relevant
+to the Computer Information Systems (“CIS”) theme.  Mary chose a
+contemporary paper in part because students would not be able to
+“cheat” in their reports, because our paper wasn’t described
+extensively on Sparknotes or similar.  Along with this (intentional)
+challenge, CIS 9590 students encountered a range of more or less
+predictable problems, e.g., many felt a lack of confidence with
+coding.  The students came to the course with a variety of different
+backgrounds (e.g., Python vs C++) which contributed to some friction
+with this course.  As guest lecturers, our initial anticipations
+(summarized in Figure \ref{cis-9590-anticipations}) didn’t precisely
+match our reflections at the end of the course.  This suggests the
+potential need for more design patterns.  With the benefit of
+hindsight, next time we might elaborate on Manny Singh’s
+proto-patterns to give them more specificity, and influence our
+participation in future cohorts.  More broadly, we observe that when
+\emph{working across contexts}, many of the ‘forces’ at work within a
 given context are initially hidden to us.  For example, we didn’t
-anticipate the students’ hesitance around coding, nor did we anticpate
+anticipate the students’ hesitance around coding, nor did we anticipate
 their taking up the cause for emerging technologies around PLACARD
 methods.
 
-The analysis in Section \ref{pop1-in-cis9590}, paired with the
-proto-patterns in Section \ref{sec:manny-protopatterns}, develops the
-\emph{litany-to-myth-back-to-litany} outline typical of other
-workshops.  Like the first case study, we used the experience to
-workshop our methods, here resulting in specific directions to explore
-in our ongoing and future work.
+\subsubsection{System}
+Whereas in our rounds of earlier participation we were more there for
+enrichment, in the most recent semester, our contributions were more
+closely integrated into the main activities of the course.  We
+attended more sessions, including one in which we attempted to run a
+short version of the workshop with attendees via Zoom.  Ongoing
+interaction saw us in an ‘in residence’ role, advising on various
+aspects of the projects.  Furthermore, Mary attended at least as many
+meetings of the Peeragogy project (one of the centers of development
+for PLACARD) as we attended sessions of the course, fostering an
+exchange of ideas and viewpoints between these two contexts. In the
+short term, this led to productive synergy and, in the long term,
+could lead to our pedagogical and peeragogical initiatives becoming
+more integrated into a larger system. This collaboration continued
+post-semester, insofar as Mary invited the students to express
+interest in possible internships in the Peeragogy project.
 
-For example, whereas we applied CLA as we went along within this case
-study, in Figure \ref{sridevi-course}, we have used a similar visual
-CLA template to Figure \ref{cis-9590-anticipations} to help design a
-future introduction to computing course for high school students.
-Here, part the \emph{system} layer envisions ‘multiple circles’ (i.e.,
-multiple instantiatens of this same template) which would express the
-developing perspective of different groups of students, to be
-integrated though a ‘monitoring’ interface used by the instructor.
-This is a useful expression of what working across contexts can mean
-in practice.
+\subsubsection{Worldview}
+Students were thinking about their future careers.  What they wanted
+to get out of the course (e.g., becoming a well-paid data scientist or
+business leader) at times had some friction with the practical reality
+of the course requirements, in which they had to deliver a concrete
+hands-on working project, without being able to rely on employees.
+PLACARD wouldn’t be of much direct help with the technical challenges
+they faced with the Intel One platform, but we hoped it would help
+them organize their work in a sensible way.  The ideas underlying
+PLACARD informed our contributions to the course at various levels;
+for example, in a session with Mary in which we ‘workshopped’ CIS 9590
+with other peeragogues, discussants suggested adding more touchpoints
+for peer learning and feedback (\emph{\`a la} the PAR).
+
+\subsubsection{Myth}
+A deep metaphor within the classroom setting is \emph{pedagogy}.
+However, the methods that we brought to the course as guests were more
+linked with our experience of \emph{peeragogy}.  In the new shared
+context, these two perspectives begin to integrate.  Mary as a host
+exercised the value of \emph{xenia} by bringing us into her course as
+guests.  The possibility of student internships within the Peeragogy
+project would create the reciprocal opportunity for further student
+practice with CIS skills in an applied context, helping to build tools
+and platforms for peer learning and peer production (including through
+use of pattern methods).  Indeed, the particular combination of peer
+learning and formal education developed here led us to wonder how far
+off the Peeragogy project might be from being able to support informal
+learning of relevant programming concepts (preliminaries to CIS 9590)
+or applied computing projects (an analogue of CIS 9590).  The
+students’ emphasis on the theme of ‘emerging technology’ suggested
+that whatever synthesis develops, it may include significantly
+upgraded technical components.  We’ve seen a corresponding need for
+emerging methods, e.g., in Kajol Khetan’s suggestion to {\sc Adapt
+  Layers As Needed}.  As a whole, this case study follows the
+\emph{litany-to-myth-back-to-litany} structure typical of other
+workshops.  As in Case Study 1 (Section
+\ref{anticipation-case-study}), we used our participant-observer role
+to workshop our methods, generating new ideas to explore in our
+ongoing and future work.  For example, in Figure \ref{sridevi-course},
+we built on our experience with CIS 9590 to help design a future
+Introduction to Computing course for high school students.  Here, part
+of the \emph{system} layer envisions ‘multiple circles’ (i.e., multiple
+instantiations of the four-layer CLA template) which would express the
+developing perspectives of different groups of students in the course,
+to be integrated into one overview through a ‘monitoring’ interface
+used by the instructor.  This is a useful expression of what
+\emph{working across contexts} can mean in practice, shifts the
+metaphor from bridging between two contexts to developing prototype
+interactions that necessarily combine several contexts.  For future
+work in teaching programming, it would be interesting to integrate
+programming-specific design considerations, as described, e.g., by
+\citet{felleisen2018design}, with the collaborative approach to
+program development described here.
+
 
 \begin{figure}[h]
 \includegraphics[width=.7\textwidth]{sridevi-course.png}
 \caption{We used the CLA template to plan a future Introduction to Computing course for high school students\label{sridevi-course}}
 \end{figure}
-
-
 
 %% Conclusion:
 %% The research paper 'Pattern of Patterns' and its authors significantly influenced my final project experience. Their engagement, guidance in project layout, avoidance of common mistakes, and focus on scalability and adaptability empowered me to make informed decisions. By observing patterns and applying their insights, I successfully developed a project that thrived in the dynamic landscape of technology. I am grateful for the authors' contributions, which shaped my final project journey under Professor Mary Tedeschi's guidance.
@@ -1105,10 +1264,11 @@ in practice.
 \section{Discussion}
 
 We presented the patterns that we developed and used over successive
-runns of our workshop, in approximately chronological order.  This
-showed how the use of certain patterns help to give rise to the
-``seeds'' of new patterns.  The evolving workshop method is a pattern
-language which operationalises the PLACARD pattern.
+runs of our workshop, in approximately chronological order.  This
+showed how the use of certain patterns gave rise to the ``seeds'' of
+new patterns.  It now makes sense to think of the evolving workshop
+method as a pattern language which operationalizes the PLACARD
+pattern.
 
 The first workshop mixed {\sc Pattern Language Components} with {\sc
   Functional Roles}, putting participants in the thick of a
@@ -1136,54 +1296,59 @@ Real World Application, and
 Peer Review.
 The formulation of an Octopus-like platform for recording and reporting on design patterns would probably need to change somewhat — but the \textbf{Problem}, \textbf{Rationale}, \textbf{Method}, and \textbf{Results} components are reasonably familiar for pattern authors.
 
-Table \ref{summary} summarises the patterns that were described in
+Table \ref{summary} summarizes the patterns that were described in
 this paper, pulling them together from across the separate case
 studies.  The table shows the patterns grouped in a way that
-elaborates our use of “PAR”, “CLA”, and “DPL” methods (summarised in
+elaborates our use of “PAR”, “CLA”, and “DPL” methods (summarized in
 Section \ref{sec:org7c32ecc}) with a more rounded description of the
-purposes that these methods serve.  Figure \ref{pattern-analysis}
-summarises the patterns in a more visual way.
+purposes that sensory, cognitive, and motor methods serve.  Figure
+\ref{pattern-analysis} summarizes the patterns in a more visual way.
+
+%% (Another nice feature we can observe in this write-up is
+%% that the {\sc Reflector} and {\sc Time Traveller} work as a pair,
+%% since both are primarily sensory patterns, and similarly the {\sc
+%% Analyst} and {\sc Linker} work as a pair of cognitive roles.)
 
 \begin{table}
   \begin{tabular}{rll}
     Sensory: &\\
-&  {\sc Dérive Comix}& ‘document what you see’ \\
-&  {\sc Pattern Language Components }& ‘build patterns piece by piece’\\
-&  {\sc Functional Roles}& ‘introduce different perspectives’ (in bold below)\\ 
-&  {\sc Pilot to Anticipate}& ‘anticipate the issues likely to arise in future iterations’\\
-&  {\sc Contested Space}& ‘each space need not to support every use equally’ \\
-&  {\sc Do Your Research}& ‘start doing the research in a more centralised way’\\
-&  {\bfseries\scshape Time Traveller }& ‘provide historical context and
+&{\sc Dérive Comix}& ‘document what you see’ \\
+&{\sc Share Back}& ‘individual groups should present key findings’\\
+&{\sc Pilot to Anticipate}& ‘anticipate the issues likely to arise in future iterations’\\
+&{\bfseries\scshape Time Traveler }& ‘provide historical context and
 anticipate alternate futures’\\
-&  {\bfseries\scshape Linkers}& ‘providing visualisation of patterns and interconnections’ \\
+&{\bfseries\scshape Reflector}& ‘appraise each developing scenario’\\
+&{\sc Contested Space}& ‘each space need not to support every use equally’ \\
+&{\sc Do Your Research}& ‘start doing the research in a more centralized way’\\
 %\hline
 Cognitive: && \\
 &{\sc Meaning Map }& ‘get everyone on the same page’\\
+&{\sc Pattern Language Components }& ‘build patterns piece by piece’\\
 &{\sc Facilitator Roles}& ‘structure the collection’\\
+&{\bfseries\scshape Analyst }& ‘identify and orchestrate the dynamic network’ \\
+& {\bfseries\scshape Linker}& ‘providing visualization of patterns and interconnections’ \\
 &{\sc Context Setting}& ‘describe the hoped-for outcomes’\\
 &{\sc Funding of Public Space}& ‘create a register of impacts’\\
 &{\sc Going Meta}& ‘explore how the project’s methods can be applied to
 itself’\\
 &{\sc Structure Conversations}& ‘structure the discussions around shared interests’\\
+&{\sc Adapt Layers As Needed}& ‘layer-based analysis and design facilitates effective communication’\\
 &{\sc Avoiding Mistakes}& ‘navigate common project development pitfalls’\\
 &{\sc Scaling and Adaptability}& ‘aim to seamlessly adopt new advancements’\\
-&{\bfseries\scshape Analyst }& ‘identify and orchestrate the dynamic network’ \\
-&{\bfseries\scshape Reflectors}& ‘appraise each developing scenario’\\
 %\hline
 Motor: && \\
 &{\sc Reinfuse Expertise }& ‘enable richer and more complex thinking’\\
+&{\sc Functional Roles}& ‘introduce different perspectives’ (in bold here)\\
+&{\bfseries\scshape Wrinkler}& ‘what might derail or counter the proposed solution’\\
 &{\sc Increase Participant Control}& ‘participants should not remain only an audience’\\
 &{\sc Rebalance Social Services}& ‘address complex local challenges’\\
-&{\sc The Future Begins Now}& ‘introduce early actions within the
-collaborative setting’\\
-&{\sc Structure Outputs}& ‘link intermediate artefacts into a relevant template’\\
+&{\sc The Future Begins Now}& ‘introduce early actions within the collaborative setting’\\
+&{\sc Structure Outputs}& ‘link intermediate artifacts into a relevant template’\\
+&{\sc Destructure Patterns}& ‘a less formal discussion can surface useful meanings’\\
 &{\sc Engagement and Guidance}& ‘create a collaborative learning environment’\\
-&{\bfseries\scshape Wrinkler }& ‘what might derail or counter
-the proposed solution’\\
-
   \end{tabular}
   \smallskip
-  \caption{Twenty-five “Patterns of Patterns”\label{summary}}
+  \caption{Twenty-nine “Patterns of Patterns”\label{summary}}
 \end{table}
 
 \begin{figure}[h]
@@ -1198,7 +1363,7 @@ We hoped that running these workshops would help us design the next
 steps for our platform and process, and this seems to have been
 successful.  As an immediate outcome, we developed the “PLACARD
 workshop” — now retitled “Open Future Design” — across several
-successive runs in different organisational contexts in a way that
+successive runs in different organizational contexts in a way that
 makes it more robust.  This relative success notwithstanding, it is
 worth recalling that our initial intention in “Patterns of Patterns”
 was to support distributed collaboration across contexts.
@@ -1208,7 +1373,7 @@ here, is a good start, if only a partial implementation of the vision.
 Running the Open Future Design workshop in different settings and
 writing up our findings here implements the {\sc Do Your Research}
 pattern.  Nevertheless, although wide-ranging and participatory, the
-development of this research remains mostly centralised.  We have not
+development of this research remains mostly centralized.  We have not
 yet implemented a fully distributed peer-to-peer collaboration
 platform, however, we have created something like a client-server
 simulation of one.
@@ -1237,38 +1402,46 @@ directly by workshop attendees, even across different contexts.  Many
 rich dialogues might ensue: already we have seen the potential for
 fruitful cross-disciplinary interaction between people from fields as
 disparate as future studies, health sciences, open research, and
-information systems.
+information systems.  Existing systems such as
+Alkemio\footnote{\url{https://alkem.io/}} are being built with the
+need for collaboration across organizational boundaries in mind,
+preferring \emph{challenge-focused} collaboration.
 
-Org Roam could be augmented with additional “emerging technologies”.
-Support for the articulation of domain-level patterns which outline
-potential new behaviours, and for the process of gathering evidence
-that those behaviours do (or do not) in fact work as intended is
-already an ambitious but logical ramification of the pattern method.
-It is a further step to articulate the learning apparatus that
-underpins such mechanisms in a computationally-coherent way.  The {\sc
-  Functional Roles} provide an early informal articulation of the
-process.  We have made reference to the Active Inference Framework as
-a foundational theory that could scaffold further more formal
-developments along these lines.
+An approach centered on DPLs which work \emph{across related
+challenges} could take that basic approach even further.  From an
+architecture perspective, a knowledge management tool like Org Roam
+could be augmented with additional “emerging technologies” that make
+it more useful for complex collaboration needs.  Support for the
+articulation of domain-level patterns which outline potential new
+behaviors, and for the process of gathering evidence that those
+behaviors do (or do not) in fact work as intended is an ambitious but
+logical ramification of the pattern method.  A further step is needed
+to articulate the learning apparatus that underpins such mechanisms in
+a computationally-coherent way.  The {\sc Functional Roles} we’ve set
+forth here provide an early informal articulation of the process, and
+their connections to the Active Inference Framework could scaffold
+further more formal developments of the apparatus.
 
-In a Pattern Languages of Programs spirit, it would be interesting to
-‘close the loop’ with an articulation of programming-specific design
-considerations, as described, e.g., by \citet{felleisen2018design}.
-The emphasis, therein, is on teaching programming, but the method
-could be elaborated to other program-creation settings.  Indeed,
-thinking beyond traditional programming, AI methods could be employed
-alongside to elaborate and work with DPL models — to identify
-analogies between action arenas, to highlight the ramifications of
-complex actions, to show predicted costs and benefits, to search for
-tipping points that allow the effects of change to reach across level
-boundaries, and as well as to surface new questions.
+Active Inference is currently being explored as a new paradigm for
+artificial intelligence
+\cite{friston2022designing,albarracin2023designing}.  In Section
+\ref{second-case-study}, we touched on how AIF could elaborate and
+work with DPL models.  Whatever underlying formalism is used, AI tools
+could usefully identify analogies between action arenas, highlight the
+ramifications of complex actions, show predicted costs and benefits,
+search for tipping points that allow the effects of change to reach
+across level boundaries, and surface new questions.
 
 We have begun (as we mean to carry on) by focusing on the development
 and articulation of multi-purpose tools for thought.
 
 \section*{Acknowledgements}
-\textit{From Mary Tedeschi}: I would like to thank Pai-Chun Ma, Nanda
-Kumar and Rudy Brown, who allow me to be creative in my classroom.
+We thank the participants in our workshops, and the CIS 9590 students
+who provided detailed feedback on our work as it was developing.  We
+also thank our PLoP 2023 shepherd Kiyoka Hayashi who gave detailed
+comments on successive drafts of this write-up.  \textit{From Mary
+  Tedeschi}: I would like to thank Pai-Chun Ma, Nanda Kumar and Rudy
+Brown, who allow me to be creative in my classroom.
 
 \renewcommand\bibname{References}
 \renewcommand\refname{References}
@@ -1347,7 +1520,7 @@ musician without a solid grasp of music theory would be hard pressed
 to compose an augmentation canon or symphony, so too we suggest that a
 group which faces complex challenges may want to consider these
 techniques for orchestrating their activities.  In sum, the methods
-we’ve discussed can be used to operationalise a strategy that is at
+we’ve discussed can be used to operationalize a strategy that is at
 the heart of Christopher Alexander’s oeuvre.
 
 \begin{figure}[h]
@@ -1366,13 +1539,13 @@ the heart of Christopher Alexander’s oeuvre.
     *+[F]{C2}  \ar@{<->}[r] & *+[F]{F2} \ar[u] & \hbox {mental picture}}
 \end{equation*}
 \vskip 10pt
-\emph{\textbf{b.}~In this setting we add a mental picture $C2$ that abstracts from the context (e.g., design requirements).  This corresponds to $F2$ e.g., plans), and $F1$ abstracts further (e.g., a description of the plan).  This allows specialisation, but there is no direct link between $C1$ and $F1$.}
+\emph{\textbf{b.}~In this setting we add a mental picture $C2$ that abstracts from the context (e.g., design requirements).  This corresponds to $F2$ e.g., plans), and $F1$ abstracts further (e.g., a description of the plan).  This allows specialization, but there is no direct link between $C1$ and $F1$.}
 \vskip -20pt
 \begin{equation*}
   \xymatrix{
     \hbox{\phantom{form}} & \hbox{\phantom{context}} & \hbox{\phantom{mental picture}} \\
     *+[F]{C1} \ar[d] & *+[F]{F1} & \hbox {actual world} \\
-    *+[F]{C2} \ar[d] & *+[F]{F2} \ar[u] & \hbox{mental picture} \\    
+    *+[F]{C2} \ar[d] & *+[F]{F2} \ar[u] & \hbox{mental picture} \\
     *+[F]{C3}  \ar@{<->}[r] & *+[F]{F3} \ar[u] & \hbox {formal picture}}
 \end{equation*}
 \vskip 10pt
@@ -1435,16 +1608,16 @@ rather than exhaustive.
 \subsection{System: Systemic approaches and solutions (social system)}
 The workshop proceeds through a combination of process steps ({\sc
   D\'erive Comix}, {\sc Meaning Map}, {\sc Reinfuse Expertise}),
-supported by facilitator who work either behind the scenes to {\sc Do
-  Your Research} or more overtly to {\sc Structure Conversations} and
-{\sc Structure Outputs}.  Facilitators take on the roles of {\sc
+supported by facilitators who may work behind the scenes to {\sc Do
+  Your Research}, or more overtly to {\sc Structure Conversations} and
+{\sc Structure Outputs}.  Facilitators can also take on the roles of {\sc
   Linkers} and {\sc Reflectors}, while participants are invited to
-take on the roles of {\sc Analyst}, {\sc Time Traveller}, and {\sc
+take on the roles of {\sc Analyst}, {\sc Time Traveler}, and {\sc
   Wrinkler}.  The methods we have used have a tendancy to {\sc
   Increase Participant Control}.  This could be pushed further, e.g.,
 with earlier phases that involve workshop participants in co-designing
 the workshop experience itself, and in subsequent phases which gather
-and analyse data.  The current articulation of patterns offers a
+and analyze data.  The current articulation of patterns offers a
 considerable amount of material that be folded into such developments.
 
 \subsection{Worldview: ways of knowing and alternative discourse}
@@ -1480,7 +1653,7 @@ us to \emph{reflect} on our intention, \emph{understand} where we are
 in the process of development we outlined, and \emph{articulate} a way
 forward.
 
-\section{Shepherd comments and response 1 Jul 2023, 05:43}
+\section{Shepherd comments 1 Jul 2023, 05:43 and response}
 
 \begin{leftbubbles}
 \label{Q:developed-by-authors} Section4: Question regarding pattern contents: In section 3, it is mentioned that "We used design patterns directly when developing and running the workshops. A selection of these patterns are included here." Are the patterns presented in section 4 the same design patterns developed by the authors, or are they created by someone else?
@@ -1488,7 +1661,7 @@ forward.
 \begin{rightbubbles}
 Most of the patterns in the Case Studies were developed by the
 authors, a few were developed by workshop participants during the
-workshop and only summarised here ({\sc
+workshop and only summarized here ({\sc
   \hyperref[pat:contested-space]{Contested Space}}, {\sc
   \hyperref[pat:funding-of-public-space]{Funding of Public Space}},
 {\sc \hyperref[{pat:rebalance-social-services}]{Rebalance Social
@@ -1522,9 +1695,9 @@ Methodology section) and a lot more pictures that aim to illustrate
 the points that are being made.  Hopefully this achieves most of the
 additional clarity that was intended by the shepherd suggestion above.
 
-(One more quick point about forces: we talk briefly about how a force
-analysis is complicated by working across contexts in Section
-\ref{further-reflections}.)
+%(One more quick point about forces: we talk briefly about how a force
+%analysis is complicated by working across contexts in Section
+%\ref{further-reflections}.)
 \end{rightbubbles}
 
 \begin{leftbubbles}
@@ -1592,4 +1765,144 @@ I’ve presented the material in both proto-pattern form and expanded
 using pattern language components; I think that’s the right level of
 detail for now. {\huge ✔️}
 \end{rightbubbles}
+
+\section{Shepherd comments 3 Aug 2023, 15:58 and response}
+
+\begin{leftbubbles}
+The BACKGROUND and METHODOLOGY are written more detailed than before, which makes it easier to understand what you created and how it is created.
+\end{leftbubbles}
+
+\begin{rightbubbles}
+{\huge 👍}
+\end{rightbubbles}
+
+\begin{leftbubbles}
+section3: The explanation of the diamond mark is written as a difference of the writing style of the patterns, but as I read the paper, I wondered if the patterns with diamonds are also new patterns. If the pattern shown with the diamonds mark was created by the workshop, that should be included as a supplemental explanation.
+\end{leftbubbles}
+
+\begin{rightbubbles}
+I introduced the separate {\huge ⚒} marker to distinguish those
+patterns which were created by workshop participants.  Since we are
+not presenting the exactly as they appeared in the workshop, they
+could be presented in either pattern or proto-pattern form.  For now,
+I’ve chosen to present them as proto-patterns, so the three patterns
+that are concerned also have the {\huge 💎} marker (see page 14). {\huge ✔️}
+\end{rightbubbles}
+
+\begin{leftbubbles}
+Section4:DÉRIVE COMIX: It says "If you have a group BUT everyone has their own experiences" as the problem, but why is everyone has their own experiences a problem?  Is it a problem that each person has different experiences, so their thoughts about the future are diverse, and it is difficult for the group to agree on a single scenario for the future?, or is it a problem that it is difficult to understand each other's future scenarios?
+\end{leftbubbles}
+
+\begin{rightbubbles}
+The diversity of perspectives in the group is really a good thing, since it can contribute to a richer meaning map!  As such this is an opportunity.  In the revised description of {\sc Pattern Language Components} for some wordsmithing related to how the “problem” language of DPL can be confusing for participants!  In {\sc D\'erive Comix}, the problem is really that “the group has been identified BUT the members don’t know each other well yet, and accordingly each has their own separate experience, and the group has no concrete shared meanings”... so I’ve included that revised text! {\huge ✔️}
+\end{rightbubbles}
+
+
+\begin{leftbubbles}
+MEANING MAP (c): What is the problem with "everyone has their own experience"?
+\end{leftbubbles}
+
+\begin{rightbubbles}
+Again, this is mostly an opportunity: and the wording needs to be
+clarified, and I’ve tried to do so! {\huge ✔️}
+\end{rightbubbles}
+
+\begin{leftbubbles}
+REINFUSE EXPERTISE: What is the problem with “If everyone has experience as a citizen BUT they also have expertise”?  Is it a problem that because we have a specialized area of expertise, they can only come up with opinions that are limited by that expertise, and the variety of ideas becomes narrower?
+\end{leftbubbles}
+
+\begin{rightbubbles}
+That’s certainly one part of the problem.  If people just share
+information with other experts, the discussion can become “siloed”.
+The problem is how to overcome this tendency.  The idea in {\sc
+  Reinfuse Expertise} is to overcome it by bringing together with
+people who have different expertise, getting them onto the same page
+as citizens, and only \emph{then} turning to their expertise.  I’ve
+tried to revise the pattern to clarify this. {\huge ✔️}
+\end{rightbubbles}
+
+\begin{leftbubbles}
+PATTERN LANGUAGE COMPONENTS: What is the meaning of “Dynamic
+keywords”? I cannot get that However or BECAUSE is written as Dynamic
+keywords.
+\end{leftbubbles}
+
+\begin{rightbubbles}
+What’s important is that the keywords are \emph{neutral}, rather than
+dynamic.  Indeed, I’ve forgotten what ‘dynamic’ was supposed to mean!
+So, I’ve tried to clarify what’s going on in the pattern text.
+Basically, if we start with a ‘problem’ (as in standard DPL language),
+then people often object that they don’t want to focus on problems,
+but rather on challenges, or even better, on solutions!  However, DPL
+does have ‘conflicting forces’ at the core: so we need to a way for
+people to talk about conflict, without getting frustrated.  That’s
+what this pattern is trying to do. {\huge ✔️}
+\end{rightbubbles}
+
+\begin{leftbubbles}
+Figure 1 makes it easy to understand the pattern at a glance and it is
+good that you included pictures related to the patterns in the figure
+1. However, I feel that there is a disconnect between the pictures and
+the content of the pattern. It would be better to make the pictures
+more consistent with the content of the pattern. And the “Projection
+Action Review” came out suddenly, and I wondered where it came from. I
+also wonder why this pattern is only in different color, and why
+PATTERN LANGUAGE COMPONENTS and FUNCTIONAL ROLES aren’t included in
+the Figure 1.
+\end{leftbubbles}
+
+\begin{rightbubbles}
+The aim of Figure 1 is primarily documentary, so I would only want to
+narrate it differently — rather than change the contents.  I’ve added
+some clarifying comments about that figure (e.g., explaining why a
+different color was used, and also explaining that some of the
+patterns used here are after-the-fact descriptions of what we did on
+the day).  I provided a link to the full set of cards shared with
+participants in a footnote. {\huge ✔️}
+\end{rightbubbles}
+
+\begin{leftbubbles}
+I really like the diagram in Figure 2 that shows the relationships
+between sensory, cognitive, and motor patterns. It would be better to
+describe this in the sentence and refer to Figure 2.
+\end{leftbubbles}
+
+\begin{rightbubbles}
+We modified the picture slightly so that it is a bit simpler, and made
+the accompanying text more to the point. {\huge ✔️}
+\end{rightbubbles}
+
+\begin{leftbubbles}
+section5: I didn't catch who Abby Tabor was for a moment, so it would be more helpful to the reader to include a word like "the auther" or "professor", which would identify someone.
+\end{leftbubbles}
+
+\begin{rightbubbles}
+Added ``coauthor” to explain her role in the paper. {\huge ✔️}
+\end{rightbubbles}
+
+\begin{leftbubbles}
+I could not see why the patterns are presented based on the chess set
+so it would be helpful to have a more detailed explanation about the
+reationships between pattern and chess set.
+\end{leftbubbles}
+
+\begin{rightbubbles}
+I added a new Table \ref{mnemonic-for-manipulatives} which explains
+the relationship to the chess pieces.  Although it wasn’t specifically
+requested in your shepherding remarks, I’d also like to point to Table
+\ref{active-inference-factors}, which re-describes the main roles in
+more theoretically-salient terms. {\huge ✔️}
+\end{rightbubbles}
+
+\begin{leftbubbles}
+Figure 3 came out suddenly, but which sentence is it referred to in? It is good to have many figures in the paper, but it is better to explain what they are about in the sentences. Figures are to supplement the sentences written in the body of the paper, so if there are no sentences that refer to the figure, the figure will not be valid.
+\end{leftbubbles}
+
+\begin{rightbubbles}
+  I’ve checked in Emacs, using \texttt{occur}, that the figures and
+  tables are all referenced in nearby text.  The text should now be
+  readable in a stand-alone fashion (i.e., without the
+  figures). {\huge ✔️}
+\end{rightbubbles}
+
 \end{document}
