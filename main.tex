@@ -1352,8 +1352,16 @@ program development that we have described.
 %% Analyst} and {\sc Linker} work as a pair of cognitive roles.)
 
 \begin{table}
+  \begin{tabular}{rp{.75\textwidth}}
+    PLACARD & “By using the PAR (or another sensory method), we are
+    able to identify recurring themes.  Then, by using the CLA (or
+    another cognitive method), we are able to organize these repeating
+    themes in a structure that exposes the underlying trends, causes,
+    and potential terminating states. With DPL (or another motor
+    method) we can make what we have learned actionable.” \cite{corneli2015a}
+\end{tabular}
   \begin{tabular}{rll}
-    Sensory: &\\
+Sensory: &&\\
 &{\sc Dérive Comix}& ‘document what you see’ \\
 &{\sc Share Back}& ‘individual groups should present key findings’\\
 &{\sc Pilot to Anticipate}& ‘anticipate the issues likely to arise in future iterations’\\
@@ -1395,10 +1403,9 @@ Motor: && \\
 \end{table}
 
 \begin{figure}[h]
-\includegraphics[trim={0 0 0 .1cm},clip=true, width=.9\textwidth]{map-of-patterns.png}
+\includegraphics[trim={0 0 0 .1cm},clip=true, width=.9\textwidth]{revised-patterns-map.png}
 \caption{Our “Patterns of Patterns” mapped to the four CLA layers. (Color code: blue=sensory, green=cognitive, red=motor.)\label{pattern-analysis}}
 \end{figure}
-
 
 \section{Conclusion}
 
@@ -1409,18 +1416,19 @@ elaborates our previous use of “PAR”, “CLA”, and “DPL” methods
 (summarized in Section \ref{sec:org7c32ecc}) with a more rounded
 description of the purposes that sensory, cognitive, and motor methods
 can serve in work with design patterns.  Figure \ref{pattern-analysis}
-summarizes the patterns in a more visual way.  (The visual summary in
-Figure \ref{pattern-analysis} is elaborated in textual form in
-Appendix \ref{cla-appendix}.)
+summarizes the patterns in a visual way, constituting a {\sc Meaning
+  Map} for our “patterns of patterns”.  (The visual summary in Figure
+\ref{pattern-analysis} is elaborated in textual form in Appendix
+\ref{cla-appendix}.)
 
 We hoped that running these workshops would help us design the next
 steps for our platform and process, and this seems to have been
 successful.  As an immediate outcome, we developed the “PLACARD
-workshop” — now retitled “Open Future Design” — across several
-successive runs in different organizational contexts in a way that
-makes it more robust.  This relative success notwithstanding, it is
-worth recalling that our initial intention in “Patterns of Patterns”
-was to support distributed collaboration across contexts.
+workshop” — now retitled the “Open Future Design Workshop” — across
+several successive runs in different organizational contexts in a way
+that makes it more robust.  This relative success notwithstanding, it
+is worth recalling that our initial intention in “Patterns of
+Patterns” was to support distributed collaboration across contexts.
 
 The informal pattern-based review of our evolving work, presented
 here, is a good start, if only a partial implementation of the vision.
@@ -1438,22 +1446,23 @@ the design of a platform for distributed collaboration, building on
 the analogy between wikis and pattern languages
 \cite{cunningham2013a}.
 
-One such crucial insight is that the meta-level is just another
-domain.  All methodological systems that aim to be practical — whether
-patterns of public health, open research, climate action, or patterns
-of patterns — should include predictions about the causal connections
+Alongside our concurrent prototyping efforts, one such crucial insight
+is that the meta-level is just another domain.  All methodological
+systems that aim to be practical — whether patterns of programs,
+public health, open research, climate adaptation, or patterns of
+patterns — should include predictions about the causal connections
 between actions and measurements, and should incorporate strategic
 intelligence to articulate action.
 
-Again, here, we have made a start.  More work would be needed to fully
-describe our patterns’ application domains, to build evidence of the
-kinds of results that can be expected, and to describe their
-interconnections as a pattern language.
+More work would be needed to fully describe our patterns’ application
+domains, to build evidence of the kinds of results that can be
+expected, and to describe their interconnections as a pattern
+language.
 
 That work would usefully have a software aspect.  For example, a
 not-so-distant future for Org Roam would allow several facilitators to
-make notes in near real-time into a shared map, and with some more
-fine tuning of the Emacs interface, a similar workflow could be used
+make notes in near real-time into a shared map; and with further
+fine-tuning of the Emacs interface, a similar workflow could be used
 directly by workshop attendees, even across different contexts.  Many
 rich dialogues might ensue: already we have seen the potential for
 fruitful cross-disciplinary interaction between people from fields as
@@ -1464,20 +1473,19 @@ need for collaboration across organizational boundaries in mind,
 preferring \emph{challenge-focused} collaboration.
 
 An approach centered on DPLs which work \emph{across related
-challenges} could take that basic approach even further.  A knowledge
-management tool like Org Roam could be augmented with additional
-“emerging technologies” that make it more useful for the entailed
-complex collaboration needs.  Support for the articulation of
-domain-level patterns which outline potential new behaviors, and for
-the process of gathering evidence that those behaviors do (or do not)
-in fact work as intended is an ambitious but logical ramification of
-the pattern method.  A further step is needed to articulate the
-learning apparatus that underpins such mechanisms in a
-computationally-coherent way.  The {\sc Functional Roles} we’ve set
-forth here provide an early informal articulation of the process, and
-the connections to the Active Inference Framework that we have
-indicated could scaffold further more formal developments of the
-apparatus.
+challenges} could take that idea further.  A knowledge management tool
+like Org Roam could be augmented with additional “emerging
+technologies” that make it more useful for the entailed complex
+collaboration needs.  Support for the articulation of domain-level
+patterns which outline potential new behaviors, and for the process of
+gathering evidence that those behaviors do (or do not) in fact work as
+intended is an ambitious but logical ramification of the pattern
+method.  A further step is needed to articulate the learning apparatus
+that underpins such mechanisms in a computationally-coherent way.  The
+{\sc Functional Roles} we’ve set forth here provide an early informal
+articulation of the process, and the connections to the Active
+Inference Framework that we have indicated could scaffold further more
+formal developments of the apparatus.
 
 Active Inference is currently being explored as a new paradigm for
 artificial intelligence
@@ -1642,51 +1650,48 @@ Realization, consisting of diagrams, a synthesis
 
 \section{SUPPLEMENT: Analysis: CLA applied to “Patterns of Patterns”} \label{cla-appendix}
 \subsection{Litany: Understanding data, headlines, empirical world (short term change)}
-Our Open Future Design workshop has evolved certain key features which
-have been retained across different implementations.  Participants can
-expect a certain amount of {\sc Context Setting}, as well as an
-introduction to {\sc Pattern Language Components}, and {\sc Functional
-  Roles}.  The outputs are created collaboratively, with some emphasis
-on {\sc Facilitator Roles}.  One outstanding problem is how the
-process of facilitation can be distributed out to participants, since
-the PLACARD pattern which inspires Open Future Design is intended for
-distributed collaboration.  Already our current ingredients have
-allowed us to organize a (small-scale) pattern-based research
-programme, addressing one of the problems that we saw in our earlier
-CLA of the DPL literature.
-
-We have seen that Open Future Design can help people articulate and
-grapple with issues they see in their lives and communities, for
-example {\sc Funding of Public Space}, {\sc Contested Space} and the
-need to {\sc Rebalance Social Services}.  This list is representative
-rather than exhaustive.
+Our Open Future Design workshop has evolved key features which have
+been retained across different implementations.  Participants can
+expect {\sc Context Setting} from convenors/facilitators, as well as
+an introduction to {\sc Pattern Language Components}, and {\sc
+  Functional Roles}.  Workshop outputs are created collaboratively,
+with support from people in {\sc Facilitator Roles}.  We have seen
+that Open Future Design process can help people articulate and grapple
+with issues they see in their lives and communities, for example {\sc
+  Funding of Public Space}, {\sc Contested Space} and the need to {\sc
+  Rebalance Social Services}.  This list is representative rather than
+exhaustive.  Domain-level issues may (usefully) mirror the workshop’s
+process-level patterns.
 
 \subsection{System: Systemic approaches and solutions (social system)}
 The workshop proceeds through a combination of process steps ({\sc
   D\'erive Comix}, {\sc Meaning Map}, {\sc Reinfuse Expertise}),
 supported by facilitators who may work behind the scenes to {\sc Do
   Your Research}, or more overtly to {\sc Structure Conversations} and
-{\sc Structure Outputs}.  Facilitators can also take on the roles of {\sc
-  Linkers} and {\sc Reflectors}, while participants are invited to
-take on the roles of {\sc Analyst}, {\sc Time Traveler}, and {\sc
-  Wrinkler}.  The methods we have used have a tendancy to {\sc
-  Increase Participant Control}.  This could be pushed further, e.g.,
-with earlier phases that involve workshop participants in co-designing
-the workshop experience itself, and in subsequent phases which gather
-and analyze data.  The current articulation of patterns offers a
-considerable amount of material that be folded into such developments.
+{\sc Structure Outputs}.  Participants are aided by manipulatives
+which help to {\sc Destructure Patterns}.  Facilitators will typically
+fill the roles of {\sc Linker} and {\sc Reflector}, while participants
+are invited to take on the roles of {\sc Analyst}, {\sc Time
+  Traveler}, {\sc Wrinkler}, and {\sc Stepper}.  We aim throughout to
+{\sc Increase Participant Control}, which can extend to participant
+co-design of the workshop experience itself (supported by the patterns
+presented here), and after the workshop, in subsequent phases of work
+which which gather, process, and organize additional data.
 
 \subsection{Worldview: ways of knowing and alternative discourse}
-The perspective, articulated by one workshop user and endorsed by our
-authoring collective, is that these methods help to communicate a
-worldview which endorses {\sc Scaling and Adaptability}, which offers
-{\sc Engagement and Guidance}, and which helps with {\sc Avoiding
-  Mistakes}.  The Open Future Design workshop goes along with the view
-that {\sc The Future Begins Now}, insofar as the actions which are
-considered inside the workshop are things that are worth testing and
-developing.  For this purpose a primary method used is {\sc Pilot to
-  Anticipate}.  Taken together, these perspectives are linked with the
-ethos of Peeragogy or “peer produced peer learning”.
+Our methods express and communicates a worldview which works across
+contexts to support {\sc Scaling and Adaptability}, offers {\sc
+  Engagement and Guidance}, and helps with {\sc Avoiding Mistakes}.
+Our work is informed by Causal Layered Analysis and other structured
+methods, however we encourage participants to {\sc Adapt Layers As
+  Needed}; one of the key purposes served by this paper is to
+articulate a range of re-usable and re-mixable methods methods that
+can be employed across sensory, cognitive, and motor domains.  The
+actions considered inside the Open Future Design workshop are things
+that are worth testing and developing: {\sc The Future Begins Now},
+and we encourage participants to {\sc Pilot to Anticipate}.  Taken
+together, our perspectives are linked with the ethos of Peeragogy or
+“peer produced peer learning”.
 
 \subsection{Myths: metaphors and narratives (longer term change)}
 We have flagged {\sc Going Meta} as the primary metaphor of this work,
@@ -1694,9 +1699,9 @@ in line with the series title, “Patterns of Patterns”.  The point is
 not to be ‘meta’ just for the sake of it, but to find the
 commonalities that reoccur across contexts, and to build bridges
 between different communities.  {\sc Going Meta} embeds a workflow
-within itself, as in the example of a wheel with ball bearings; and
-specifically, regarding the role that “Patterns of Patterns” play
-relative to patterns themselves:
+within itself.  A suitable metaphor is found in the example of a wheel
+that rolls on ball bearings.  This metaphor helps to express the role
+that “Patterns of Patterns” play relative to patterns themselves:
 \begin{quote}
   Technological progress is achieved through a dialectical
   relationship between mediation (adaptation to the end terms: the
@@ -1704,9 +1709,9 @@ relative to patterns themselves:
   autocorrelation, the relation between the technical object and
   itself. \cite{Simondon2005-pq}
 \end{quote}
-{\sc Going Meta}, by applying PLACARD to itself, as it were, allows
-us to \emph{reflect} on our intention, \emph{understand} where we are
-in the process of development we outlined, and \emph{articulate} a way
+{\sc Going Meta}, by applying PLACARD to itself (as it were) allows us
+to \emph{reflect} on our intention, \emph{understand} where we are in
+the process of development we outlined, and \emph{articulate} a way
 forward.
 
 \section{Shepherd comments 1 Jul 2023, 05:43 and response}
