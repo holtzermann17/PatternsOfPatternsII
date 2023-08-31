@@ -28,6 +28,7 @@
 \usepackage{varwidth}
 \usepackage{environ}
 \usepackage{xparse}
+\usepackage{microtype}
 
 \newlength{\bubblewidth}
 \AtBeginDocument{\setlength{\bubblewidth}{.75\textwidth}}
@@ -90,11 +91,12 @@
 %%%
 
 \newfontfamily{\chess}[Color=red]{chess_merida_unicode.ttf}
+%\newfontfamily{\emoji}[Color=red]{DejaVu Sans}
 
 \usepackage{xltxtra}
 \usepackage{slantsc}
-\usepackage{xelatexemoji}
-\renewcommand{\xelatexemojipath}[1]{./svg/U#1.PDF}
+%\usepackage{xelatexemoji}
+%\renewcommand{\xelatexemojipath}[1]{./svg/U#1.PDF}
 
 \setcopyright{rightsretained}
 \copyrightyear{2021}
@@ -120,6 +122,13 @@
 \usepackage{capt-of}
 \usepackage{hyperref}
 \usepackage{fontspec}
+
+%\newfontfamily\emoji[Path = /home/joe/PatternsOfPatternsII/]{Noto Color Emoji}
+
+\usepackage{emoji}
+\setemojifont{Noto Color Emoji}
+%\usepackage{coloremoji}
+
 \usepackage{mdframed}
 \usepackage{afterpage}
 
@@ -129,10 +138,10 @@
 
 \usepackage[pagewise]{lineno}
 \renewcommand\thelinenumber{\color{red}\arabic{linenumber}}
-\usepackage{xunicode}
+%\usepackage{xunicode}
 \usepackage{natbib}
 \usepackage{float}
-\usepackage{xypic}
+%\usepackage{xypic}
 \usepackage{tikz}
 \newcommand{\sensory}{(s)}
 \newcommand{\cognitive}{(c)}
@@ -144,7 +153,6 @@
 \usepackage{placeins}
 %\usepackage{starfont}
 % \newfontfamily{\alch}{Alchemy}
-\newfontfamily\emoji{DejaVu Sans}
 %\newcommand{\Asclepius}{{\emoji\symbol{"2695}}}
 %\newcommand{\Caduceus}{{\emoji\symbol{"2624}}}
 \setmainfont{Libertinus Sans}
@@ -247,26 +255,26 @@ pattern methods.
 %% remains to be done.
 
 \subsection{Related work}
-The work presented here progressed within and alongside the Peeragogy
-project.  Aspects of peeragogy were previously presented as design
-patterns \cite{corneli2015a}.  PLACARD builds on our associated
-experience with peer learning and peer production.  This paper focuses
-on the primary strategy that we used to make PLACARD more concrete and
-useful, namely to run a series of workshops that share our way of
-working, where we could study collaborative processes in microcosm.
+Our work on this paper, and the prequel, progressed alongside the
+Peeragogy project.\footnote{\url{https://peeragogy.org/}} Aspects of
+peeragogy were previously presented as design patterns
+\cite{corneli2015a}.  This paper focuses on a series of workshops that
+made our style of working accessible for “{\scitshape Newcomer}\hspace{.05em}s\hspace{.05em}” to peeragogy.  In these workshops, and in the workshop series as
+a whole, we co-created a context to study collaborative processes in
+microcosm.
 
-Beyond the workshop setting, our overall aim is to study and support
-social intelligence.  Design patterns are a useful medium for that
-work.  \citet{iba2016pattern} provide a large collection of patterns
-for creating patterns; and their threefold decomposition of the
-pattern language creation process, into mining (\emph{a sensory
-activity}), writing (\emph{a cognitive activity}), and symbolizing
-(\emph{a motor activity}), bears an analogy with PLACARD.  However,
-our aim is not to retrace Iba and Isaku’s {\scitshape Pattern Language
-  Creation} pattern — though we do cross-reference their work at key
-junctures here.  Rather, our aim is to descibe our own process of
-working with patterns, and to continue the reconstruction of pattern
-theory begun in the prequel.
+The overall aim of this line of work to study and support social
+intelligence \cite{benkler2015peer}, with a particular emphasis on
+learning aspects.  Design patterns are a useful medium for this work.
+\citet{iba2016pattern} provide a large collection of patterns for
+creating patterns; and their threefold decomposition of the pattern
+language creation process, into mining (\emph{a sensory activity}),
+writing (\emph{a cognitive activity}), and symbolizing (\emph{a motor
+activity}), bears an analogy with PLACARD.  However, our aim is not to
+retrace Iba and Isaku’s {\scitshape Pattern Language Creation} pattern
+— though we do cross-reference their work at key junctures here.
+Rather, we descibe our own process of working with patterns with the
+aim of further developing our reconstruction of pattern theory.
 
 Earlier authors, such as \citet{moran1971a} and \citet{OXMAN1994141},
 looked at the specifically-computational implementation of design
@@ -276,15 +284,14 @@ social interaction and paper prototype level.  We return to questions
 related to supportive computational implementation in the closing
 sections of this paper.
 
-We also draw connections between design patterns and the active
-inference framework, which “can be applied to explain the influential
-flows and dynamics of any open system at any scale”
-\cite{Hiplito2022}, and begin to integrate this framework with pattern
-language methods.  Hip\'olito and van Es point out that patterns (when
-understood in a suitably general sense) are pre-linguistic, and are
-discovered and learned through bodily experience.  With language, the
-articulation of patterns allows us to participate in a process
-\emph{niche construction}.
+We will draw heuristic connections between design patterns and the
+active inference framework, a theory originating in theoretical
+neuroscienc which “can be applied to explain the influential flows and
+dynamics of any open system at any scale” \cite{Hiplito2022}.
+Hip\'olito and van Es point out that patterns (when understood in a
+suitably general sense) are pre-linguistic, and are discovered and
+learned through bodily experience.  The articulation of patterns in
+language supports a process of \emph{niche construction}.
 %% Can we relate Alexander’s “Maximum Entropy” analysis with the stats methods used here?
 %% Add City is not a tree quote.
 %% In this regard, we work in a way that is rather closer to the
@@ -304,8 +311,18 @@ articulation of patterns allows us to participate in a process
 %% than those which several have attempted to improve, by making old
 %% walls serve for purposes for which they were not originally built.
 %% \end{quote}
+
 Towards this end, we embrace the often messy process of prototyping
-our way forward.
+our way forward.  “Making old walls serve for purposes for which they
+were not originally built” \cite{descartes1850discourse} is a suitable
+metaphor for this process.  Whilst patterns have been thought of as a
+“living language” \cite[p.~xvii]{alexander1977a} from the start,
+readers may nevertheless find well-articulated evolutionary
+perspective on pattern language development both practical and
+illuminating.  In particular, \citet[p.~xxiii]{lowy2019righting} notes
+that “no other industry [apart from software development!] opts for a
+clean slate on a regular basis simply because doing so does not make
+economic sense.”
 
 \section{Methodology}
 \label{sec:org134acbb}
@@ -319,22 +336,22 @@ CIS 9590 “Information Systems Development Project” at Baruch College,
 part of the City University of New York.  We use experience reports,
 and Causal Layered Analysis \cite{inayatullah1998b}, to develop a deep
 dive into that specific application.  We also used of CLA as a tool in
-the other workshops, via a new visual template which is similar to the
-“wholeness egg” of \citet{wholeness-egg-II}.
+the other workshops, via a new visual template which bears some
+similarity to the “wholeness egg” of \citet{wholeness-egg-II}.
 
-Our central methodological technique was to use design patterns—as
-design inputs, as in-workshop manipulatives, and as analytic
-outputs—in each of the workshops.  A representative selection of the
-patterns that we used are included in this paper.  Each of the
-patterns is given a marker, (s), (c), or (m), to indicate whether it
-plays a primarily sensory, cognitive, or motor role.  We also include
-the itinerary for each of the workshops to help bring the reader into
-the scene.
+In developing the workshops, our central methodological technique was
+to use design patterns—as design inputs, as in-workshop manipulatives,
+and as analytic outputs—in each of the workshops.  A representative
+selection of the patterns that we used are included in this paper.
+Each of the patterns is given a marker, (s), (c), or (m), to indicate
+whether it plays a primarily sensory, cognitive, or motor role.  We
+also include the itinerary for each of the workshops to help bring the
+reader into the scene.
 
 We endeavor to show our process of pattern-development within the
 paper.  As such, the paper includes a combination of patterns that
 follow a formal template, and proto-patterns, without substructure.
-The latter are distinguished by a “💎” marker, which evokes the
+The latter are distinguished by a “\emoji{gem}” marker, which evokes the
 concept of \emph{pattern mining}.  In our view, additional formality
 does not always help with communication.  We endeavor to show how and
 when it is helpful.  In Section \ref{cis-case-study}, we give some
@@ -344,7 +361,7 @@ some further justification for including work at different levels of
 formality, with reference to \citet{alexander1964notes}.  Some of the
 (proto-)patterns that we present here were created by workshop
 participants, rather than by the paper’s coauthors, and these are
-distinguished by a “⚒” marker.
+distinguished by a “\emoji{pick}” marker.
 
 For the patterns which are spelled out formally in the paper, we use
 this simple variation on the classical “Context Problem Solution”
@@ -363,38 +380,36 @@ sub-language of roles in Section \ref{second-case-study}.  In the
 paper’s subsections which focus on presenting patterns, additional
 narrative appears in an italic font.
 
-We present the patterns that we developed and used in (mostly)
-chronological order.  In our iterative way of working, the workshop
-method itself becomes a kind of (complex) pattern, which we ran with
-variations.  At each stage, input patterns play the role of
-lightweight hypotheses, structuring the experience and potentially
-being validated or invalidated by the interactions.  As observed by
+We present the patterns that we developed and used in chronological
+order, insofar as this was possible in a retrospective reflection.  In
+our iterative way of working, the workshop method itself becomes a
+kind of (complex) pattern, which we ran with variations.  At each
+stage, input patterns play the role of lightweight hypotheses,
+structuring the experience and potentially being validated or
+invalidated by the interactions.  As observed by
 \citet{iba2016pattern} the clear articulation of pattern-writing
 patterns helps to identify when patterns are used: but \emph{not every
 pattern is used every time}.  In our context, the survival of a given
 pattern to the next workshop (or not) gives a sense of the
 evolutionary character of the overall method.  The methodological
 changes typically had a strategic rationale, and we aim to describe
-this in our commentary.
+this in our commentary.  We carefully reviewed the lessons learned
+after each workshop, either by using the Project Action Review
+template, or through less formal but nevertheless detailed post
+mortems.  Writing this paper is linked with that aspect of the method,
+since it provides the opportunity for review at a deeper rhythm.
 
-On that note, we carefully reviewed the lessons learned after each
-workshop, either by using the Project Action Review template, or
-through less formal but nevertheless detailed post mortems.  Writing
-this paper is linked with that aspect of the method, since it provides
-the opportunity for review at a deeper rhythm.
-
-Indeed, if workshop development were our only aim, we would not have
-needed to write this paper at all, since there are many third-party
-resources to draw upon.  For example, \citet{miller-workshops}
-outlines a general-purpose workshop design strategy.  Other methods
-which we have encountered as workshop attendees include an adaptation
-of \emph{sociocracy} \cite{sociocracy-manual}, a strategy for
+If workshop development were our only aim, we would not have needed to
+write this paper at all. \citet{miller-workshops} outlines a
+general-purpose workshop design strategy.  Other methods which we have
+encountered as workshop attendees include an adaptation of
+\emph{sociocracy} \cite{sociocracy-manual}, a strategy for
 collaboration that is distributed over nested ‘circles’, each of which
 makes decisions by consent (rather than consensus); and \emph{theory
 of change} \cite{Coryn2010}, a method for articulating criteria for a
-project’s success by mapping the preconditions for change.  We did not
-make specific use of these methods, though inspirations we gained by
-attending others’ workshops is reflected in our work.
+project’s success.  General inspirations such as these are not
+commented on specifically in the text, though we are confident that
+they could be “patternized”.
 
 \clearpage
 
@@ -634,7 +649,7 @@ time.\\
 
 {\sc Wrinkler} &  {\chess ♘} & In chess, the Knight moves in a skewed fashion: in order to go in one direction, it must also go a little bit in another direction.  The {\sc Wrinkler} role, similarly, looks at how a given strategy might go askew, due to unintended consequences or otherwise.\\
 
-{\sc Linker} &  {\chess ♖} & In chess, the Rook moves any distance, as long as it goes in a straight line.  The {\sc Linker} role, similarly, can record a link between any two related concepts.  Since all concepts are potentially related in some fashion, the {\sc Linker} focuses on making \emph{useful} connections.\\
+{\sc Linker} &  {\chess ♖} & In chess, the Rook moves any distance, as long as it goes in a straicoght line.  The {\sc Linker} role, similarly, can record a link between any two related concepts.  Since all concepts are potentially related in some fashion, the {\sc Linker} focuses on making \emph{useful} connections.\\
 
 {\sc Reflector} &  {\chess ♔} & In chess, capturing the King means the end of the game, so players are concerned throughout with any threat to their King.  Here, the {\sc Reflector} role senses how the discussion of a given scenario is progressing and when it would be good to draw it to a close and move on. 
 \end{tabular}
@@ -699,11 +714,10 @@ form of shared future stories, outlining paths to action.  Photos in
 Figure \ref{ExampleParticipantPattern} show the movement from:
 \begin{itemize}
   \item Initial sketching at the start of Phase I, beginning at the
-    \emph{litany} level, within small groups (upper left), to:
+    \emph{litany} level, within small groups, to:
   \item A collection of themes shared across groups at the end of
     Phase I, to create a {\sc Meaning Map} which, in CLA terms, is
-    intended to bring everyone into a shared \emph{myth} layer (lower
-    left), on to:
+    intended to bring everyone into a shared \emph{myth} layer, on to:
   \item Phase II work using {\sc Pattern Language Components}, to
     identify both general and specific possibilities for action around
     a theme.
@@ -711,7 +725,16 @@ Figure \ref{ExampleParticipantPattern} show the movement from:
 
 \begin{figure}
   \includegraphics[width=\textwidth]{PatternProcess.png}
-  \caption{Use of diagrams and manipulatives to create meaning maps and new patterns (paralleling {\scitshape MA 1.3 Mining Atmosphere} from \citet{iba2016pattern}) \label{ExampleParticipantPattern}}
+  \caption{Use of diagrams and manipulatives to create meaning maps
+    and new patterns (paralleling {\scitshape MA 1.3 Mining
+      Atmosphere} from \citet{iba2016pattern}. In the upper-left
+    photo, the CLA layers are mapped to concentric circles; from
+    outside to center: litany, system, worldview, myth.  The {\sc
+      Share Back} pattern was used to collect core themes from groups
+    working separately, as the basis of a shared myth (lower left).
+    {\sc Pattern Language Components} were used to sketch solution
+    strategies to key problems and concerns, e.g., {\sc Funding of
+      Public Space} (right). \label{ExampleParticipantPattern}}
 \end{figure}
 
 \clearpage
@@ -758,7 +781,7 @@ of the corresponding mnemonic.}
 
 \input{input-patterns/stepper.tex}
 
-\subsection{Further remark on the Roles of Roles}
+\subsection{Further remark on the Roles of Roles}\label{role-of-roles}
 Relevant high-level next steps following up on this workshop would be
 revise and re-articulate the proto-patterns above in more formal
 terms, alongside with a process of evidence-gathering that would
@@ -776,11 +799,11 @@ key aspects of the Active Inference Framework (see
 \citet{SMITH2022102632} for a primer on the key concepts in AIF).
 
 A synthesis of DPL and AIF would go beyond the classical
-neuroscientific language that underpins PLACARD.  It would integrate
+neuroscientific language that underpins PLACARD.  It might integrate
 something like our {\sc Functional Roles} roles into patterns
 themselves, so that given pattern would be able to ‘sense’ when it
-needs to be revised to match a previously-unexpected reality; or,
-similarly, a collection of patterns would sense when a new pattern
+needs to be revised to match a previously-unexpected reality;
+similarly, a collection of patterns would ‘sense’ when a new pattern
 needs to be created, when an existing pattern should be applied, or
 when the structure and function of the generative model needs to
 change in more radical ways.
@@ -799,6 +822,26 @@ observations}.\\
 \caption{Key factors in the Active Inference Framework are reflected in participant roles\label{active-inference-factors}}
 \end{table}
 
+\noindent \citet{benoit2019structure} supply this paraphrase of
+Christopher Alexander’s conception of urban development: “‘natural’
+cities evolve by maintaining their amount of surprisal constant on
+average.”  Similar thinking might characterise the evolution of
+pattern languages, both in urban contexts and other settings.
+Developments along these lines could help correct the structural
+limitations of \emph{A Pattern Language} described by
+\cite{Dawes2018}.
+
+Active Inference is currently being explored as a new paradigm for
+artificial intelligence
+\cite{friston2022designing,albarracin2023designing}.  Here, we suggest
+that AIF and DPL can support each other, with AIF being given a
+practical and intuitive implementation using design pattern concepts,
+and DPL receiving a needed theoretical through integration with Active
+Inference.  Both are loosely hierarchical in nature: in the large,
+Alexander’s theory zooms in from patterns for towns, to buildings, to
+construction; whereas AIF zooms out, from “I model the world” to “we
+model the world” to “we model ourselves modelling the world”
+\cite{Kirchhoff2018}.
 
 
 % building on these descriptions, and which would help to express the
@@ -883,10 +926,9 @@ challenge of holding conversations when “people aren’t here” in
 person.  The digital notes also provided an opportunity for textual
 corrections, and for synthesis of links which hadn’t been spelled out
 so directly with the manipulatives, e.g., the name ``Richard Owens''
-[sic] was noted down in the workshop (Figure \ref{brookes-workshop},
-right), and is represented in the digital notes as \emph{Richard
-Owen}, key proponent of responsible innovation \cite{Owen2013}, in
-notes appearing within the ``responsible'' node.
+[sic] (Figure \ref{brookes-workshop}, right) is represented in the
+digital notes as \emph{Richard Owen}, key proponent of responsible
+innovation \cite{Owen2013}, within the ``responsible'' node.
 
 The overall process illustrated in Figure \ref{Org-Roam-Screenshot}
 moves in the opposite direction of \emph{Figures 3-7} of
@@ -1332,10 +1374,11 @@ The formulation of an Octopus-like platform for recording and reporting on desig
 \caption{We used the CLA template to plan a future Introduction to Computing course for high school students\label{sridevi-course}}
 \end{figure}
 
-These remarks suggest a relationship between patterns and research
-that should be pursued further.  As in Case Study 4, the relationship
-between patterns and education is also seen to be rewarding—and,
-indeed, these spheres of endeavor can often be fruitfully combined.  A
+These remarks suggest a relationship between \emph{patterns} and
+\emph{research} that should be pursued further.  As discussed in Case
+Study 4 (and at length elsewhere in the literature) the relationship
+between \emph{patterns} and \emph{education} is also rewarding.
+Indeed, patterns can help to bridge between education and research.  A
 further example is warranted.  In Figure \ref{sridevi-course}, we show
 how our experience with CIS 9590 can help inform a future Introduction
 to Computing course for high school students.  Here, part of the
@@ -1345,18 +1388,57 @@ developing perspectives in different groups of students collaborating
 together in the course.  These would be integrated into one overall
 perspective through a ‘monitoring’ interface used by the instructor.
 This is a useful expression of what \emph{working across contexts}
-could mean in practice.  For teaching — and doing — programming, in
-future work, it would be interesting to integrate programming-specific
-design considerations, as described, e.g., by
-\citet{felleisen2018design}, with the collaborative approach to
-program development that we have described.
+could mean in practice.
 
+Although it is beyond the scope of the current paper, it would be
+interesting build on these remarks in a way that integrates
+programming- and software-specific design considerations, as
+described, e.g., by \citet{felleisen2018design} and
+\citet{lowy2019righting}, with the more general pattern-based approach
+to collaborative that we presented in this paper.
 
+\FloatBarrier
 
 %% (Another nice feature we can observe in this write-up is
 %% that the {\sc Reflector} and {\sc Time Traveller} work as a pair,
 %% since both are primarily sensory patterns, and similarly the {\sc
 %% Analyst} and {\sc Linker} work as a pair of cognitive roles.)
+
+
+\section{Summary}
+
+The primary contributions made in this paper can be summarised thusly:
+
+\begin{itemize}
+\item Table \ref{summary} pulls togetherthe patterns we have described
+  from across the separate case studies, and organizes them in groups,
+  elaborating our previous use of “PAR”, “CLA”, and “DPL” methods
+  (summarized in Section \ref{sec:org7c32ecc}) with \emph{a rounded
+  outline of the purposes that sensory, cognitive, and motor methods
+  serve when working with design patterns.}
+
+\item Figure \ref{pattern-analysis} summarizes the patterns in a
+  visual way, constituting a {\sc Meaning Map} for our “patterns of
+  patterns”.  This visual summary in Figure \ref{pattern-analysis} is
+  elaborated in textual form in Appendix \ref{cla-appendix}.  In
+  short, like a round wheel that rolls better on round ball bearings,
+  \emph{our analysis of the “Patterns of Patterns” can make work with
+  patterns more efficient}.
+
+\item Figure \ref{revised-cards} re-presents selected patterns as
+  described in this paper, in \emph{a practical format in which the
+  material presented here can be used to co-design future
+  workshops}.\footnote{``Open Future Design Workshop: Together with
+  workshop participants, we will co-develop a Design Pattern Language
+  for envisioning, exploring, and enacting the future.”  Wikimania
+  2023, \url{https://pretalx.com/wm2023/talk/WVLJRV/}} Whilst the
+  collection of patterns has been refined through practice and
+  critique, we make no claim of completeness; “blank” cards in Figure
+  \ref{revised-cards} explicitly suggest that further patterns can and
+  should be added; \emph{we now have an improved understanding of how
+  and when new patterns are likely to be needed, as well as how to
+  develop them.}
+\end{itemize}
 
 \begin{table}
 \hspace{-1em}\begin{tabular}{rp{.82\textwidth}}
@@ -1414,43 +1496,39 @@ Motor: && \\
 \caption{Our “Patterns of Patterns” mapped to the four CLA layers. (Color code: blue=sensory, green=cognitive, red=motor.)\label{pattern-analysis}}
 \end{figure}
 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[page=2,trim={1cm .5cm 1cm .5cm},clip=true, width=.85\textwidth]{./RPG-LaTeX-Template/cards.pdf}
+
+\vspace{-.5cm}
+  \noindent\includegraphics[page=3,trim={1cm .5cm 1cm .5cm},clip=true, width=.85\textwidth]{./RPG-LaTeX-Template/cards.pdf}
+\end{center}
+\vspace{-1cm}
+\caption{Selected pattern cards, representing the patterns in manipulative form\label{revised-cards}}
+\end{figure}
+\FloatBarrier
+
 \section{Conclusion}
 
-Table \ref{summary} summarizes the patterns that were described in
-this paper, pulling them together from across the separate case
-studies.  The table shows the patterns grouped in a way that
-elaborates our previous use of “PAR”, “CLA”, and “DPL” methods
-(summarized in Section \ref{sec:org7c32ecc}) with a more rounded
-description of the purposes that sensory, cognitive, and motor methods
-can serve in work with design patterns.  Figure \ref{pattern-analysis}
-summarizes the patterns in a visual way, constituting a {\sc Meaning
-  Map} for our “patterns of patterns”.  (The visual summary in Figure
-\ref{pattern-analysis} is elaborated in textual form in Appendix
-\ref{cla-appendix}.)
-
-We hoped that running these workshops would help us design the next
+We carried out this work with the intention of designing the next
 steps for our platform and process, and this seems to have been
 successful.  As an immediate outcome, we developed the “PLACARD
 workshop” — now retitled the “Open Future Design Workshop” — across
-several successive runs in different organizational contexts in a way
-that makes it more robust.  This relative success notwithstanding, it
-is worth recalling that our initial intention in “Patterns of
-Patterns” was to support distributed collaboration across contexts.
+several successive runs, in different organizational contexts, in a
+way that makes it more robust.  This relative success notwithstanding,
+it is worth recalling that the scope of “Patterns of Patterns” was
+larger: our expressed aim was to support distributed collaboration
+across contexts.
 
-The informal pattern-based review of our evolving work, presented
-here, is a good start, if only a partial implementation of the vision.
-Running the Open Future Design workshop in different settings and
-writing up our findings here implements the {\sc Do Your Research}
-pattern.  Nevertheless, although wide-ranging and participatory, the
-development of this research remains mostly centralized.  We have not
-yet implemented a fully distributed peer-to-peer collaboration
-platform, however, we have created something like a client-server
-simulation of one.  For most workshop participants, the workshop
-happens once, whereas for the facilitators, it has repeated with
-variation over time, allowing us to learn.  Our primary gambit has
-been to seek insights from the workshop pilots which can contribute to
-the design of a platform for distributed collaboration, building on
-the analogy between wikis and pattern languages
+Although the work presented here was wide-ranging and participatory,
+we have not yet implemented a fully distributed peer-to-peer
+collaboration platform.  However, we have created something like a
+client-server simulation of one.  For most workshop participants, the
+workshop has happened once: whereas for the facilitators, it has
+repeated with variation over time, allowing us to learn.  Our primary
+gambit has been to seek insights from the workshop pilots which can
+contribute to the design of a platform for distributed collaboration,
+building on the analogy between wikis and pattern languages
 \cite{cunningham2013a}.
 
 Alongside our concurrent prototyping efforts, one such crucial insight
@@ -1491,16 +1569,8 @@ step is needed to articulate the learning apparatus that underpins
 such mechanisms in a computationally-coherent way.  The {\sc
   Functional Roles} we’ve set forth here provide an early informal
 articulation of the process, and the connections to the Active
-Inference Framework that we have indicated could scaffold further more
-formal developments of the apparatus.
-
-Active Inference is currently being explored as a new paradigm for
-artificial intelligence
-\cite{friston2022designing,albarracin2023designing}.  One contribution
-this paper makes is to suggest that AIF and DPL can support each
-other: AIF can be given a practical and intuitive implementation using
-design patterns, and DPL can receive a needed theoretical upgrade from
-Active Inference.
+Inference Framework that we alluded to in Section \ref{role-of-roles}
+could scaffold further, more formal, developments.
 
 Regarding our aim to support large-scale distributed collaboration,
 whatever underlying formalism is used, and independent of which
@@ -1515,11 +1585,19 @@ challenges.
 
 \section*{Acknowledgements}
 We thank the participants in our workshops, and the CIS 9590 students
-who provided detailed feedback on our work as it was developing.  We
-also thank our PLoP 2023 shepherd Kiyoka Hayashi who gave detailed
-comments on successive drafts of this write-up.  \textit{From Mary
-  Tedeschi}: I would like to thank Pai-Chun Ma, Nanda Kumar and Rudy
-Brown, who allow me to be creative in my classroom.
+who provided detailed feedback on “Patterns of Patterns” as it was
+developing.  We wish to thank and acknowledge the funders who
+supported our work.  The workshop described in Case Study 2 was
+sponsored by a Springboard grant from the University of the West of
+England; and the workshop described in Case Study 3 took place under
+the auspices of the Research England REDF grant: “Growing and
+embedding open research in institutional practice and culture”.  Kajol
+Khetan’s contributions were supported by a Sidney and Laura Gilbert
+Internship Award from Baruch College.  We would also like to thank our
+PLoP 2023 shepherd Kiyoka Hayashi who gave detailed comments on
+successive drafts of this write-up.  \textit{From Mary Tedeschi}: I
+would like to thank Pai-Chun Ma, Nanda Kumar and Rudy Brown, who allow
+me to be creative in my classroom.
 
 \renewcommand\bibname{References}
 \renewcommand\refname{References}
@@ -1537,11 +1615,12 @@ considered the problems faced by groups of people organizing their
 activities.  This can be usefully related to two diagrams from
 Alexander's ``Notes on the Synthesis of Form'', recopied below as
 Figure \ref{synthesis-diagrams}.  Parts a.-c. of this figure have two
-columns corresponding to context/form (or problem/solution), and one,
-two, or three rows, corresponding to the ``actual world'', ``mental
-picture'' and ``formal picture''.  A design problem is posed at the
-level of the actual world, say, ``build a house atop this hill'' or
-``make a celebration song''.
+columns corresponding to context/form (or in the terms Alexander uses
+in his work on patterns: problem/solution), and one, two, or three
+rows, corresponding to the ``actual world'', ``mental picture'' and
+``formal picture''.  A design problem is posed at the level of the
+actual world, say, ``build a house atop this hill'' or ``make a
+celebration song''.
 
 The design problem can be solved at one of the three levels.  The most
 direct approach is to work in the actual world.  For instance, a
@@ -1602,62 +1681,7 @@ we’ve discussed can be used to operationalize a strategy that is at
 the heart of Christopher Alexander’s oeuvre.
 
 \begin{figure}[h]
-\begin{equation*}
-  \xymatrix{
-    \hbox{\textbf{context}} & \hbox{\textbf{form}} & \hbox{\phantom{mental picturexxx}} \\
-    *+[F]{C1}  \ar@{<->}[r] & *+[F]{F1} &            \hbox{\hspace{-.2cm}actual world}}
-\end{equation*}
-\vskip 10pt
-\emph{\textbf{a.}~In this point there is a close relationship between content and form, and they evolve together.}
-\vskip -20pt
-\begin{equation*}
-  \xymatrix{
-    \hbox{\phantom{form}} & \hbox{\phantom{context}} & \hbox{\phantom{mental picture}} \\
-    *+[F]{C1} \ar[d] & *+[F]{F1} & \hbox {actual world} \\
-    *+[F]{C2}  \ar@{<->}[r] & *+[F]{F2} \ar[u] & \hbox {mental picture}}
-\end{equation*}
-\vskip 10pt
-\emph{\textbf{b.}~In this setting we add a mental picture $C2$ that abstracts from the context (e.g., design requirements).  This corresponds to $F2$ e.g., plans), and $F1$ abstracts further (e.g., a description of the plan).  This allows specialization, but there is no direct link between $C1$ and $F1$.}
-\vskip -20pt
-\begin{equation*}
-  \xymatrix{
-    \hbox{\phantom{form}} & \hbox{\phantom{context}} & \hbox{\phantom{mental picture}} \\
-    *+[F]{C1} \ar[d] & *+[F]{F1} & \hbox {actual world} \\
-    *+[F]{C2} \ar[d] & *+[F]{F2} \ar[u] & \hbox{mental picture} \\
-    *+[F]{C3}  \ar@{<->}[r] & *+[F]{F3} \ar[u] & \hbox {formal picture}}
-\end{equation*}
-\vskip 10pt
-\emph{\textbf{c.}~Now we add a meta-language: the formal picture corresponding to the mental picture.}
-\vskip 10pt
-\begin{center}
-\begin{minipage}[c]{0.45\textwidth}
-\begin{equation*}
-  \xymatrix @C 5pt @R 6pt {
-    & \ar@2{->}[d]
-      & & & \t \ar@{-}[lld] \ar@{-}[rdd]  \ar@{-}[rrrdd] & & & & \\
-    & & \t \ar@{-}[ld] \ar@{-}[rdd] & & & & & & \\
-    & \t \ar@{-}[ld] \ar@{-}[d] \ar@{-}[rd] & & & & \t
-      \ar@{-}[ld] \ar@{-}[d] \ar@{-}[rd] & & \t \ar@{-}[d] \ar@{-}[rd] & \\
-  \t & \t & \t & \t & \t & \t & \t & \t & \t}
-\end{equation*}
-Program, consisting of sets, based on an analysis
-\end{minipage}
-\hskip 25pt
-\begin{minipage}[c]{0.45\textwidth}
-\begin{equation*}
-  \xymatrix @C 5pt @R 6pt {
-    & & & & \T \ar@{-}[lld] \ar@{-}[rdd]  \ar@{-}[rrrdd] & & & & \\
-    & & \T \ar@{-}[ld] \ar@{-}[rdd] & & & & & \ar@2{->}[u] & \\
-    & \T \ar@{-}[ld] \ar@{-}[d] \ar@{-}[rd] & & & & \T
-     \ar@{-}[ld] \ar@{-}[d] \ar@{-}[rd] & & \T \ar@{-}[d] \ar@{-}[rd] & \\
-  \T & \T & \T & \T & \T & \T & \T & \T & \T}
-\end{equation*}
-Realization, consisting of diagrams, a synthesis
-\end{minipage}
-\vskip 10pt
-\emph{\textbf{d.}~At this level we have methods for actually doing the programming.}
-\vskip 10pt
-\end{center}
+\includegraphics[trim={3cm 7cm 3cm 3cm},clip=true, width=.9\textwidth]{appendix.pdf}
 \caption{Diagrams from \emph{Synthesis of Form}\label{synthesis-diagrams}}
 \end{figure}
 \FloatBarrier
@@ -1793,7 +1817,7 @@ Itinerary."
 
 \begin{rightbubbles}
 I’ve restructured each subsection ‘in order’ with clearly delineated
-inputs, process, and outputs.  {\huge ✔️}
+inputs, process, and outputs.  {\large \emoji{check-mark}}
 \end{rightbubbles}
 
 \begin{leftbubbles}
@@ -1806,7 +1830,7 @@ align with the solution of the pattern.
 \end{leftbubbles}
 
 \begin{rightbubbles}
-Slightly reworded to make these align better. {\huge ✔️}
+Slightly reworded to make these align better. {\large \emoji{check-mark}}
 \end{rightbubbles}
 
 \begin{leftbubbles}
@@ -1822,7 +1846,7 @@ necessary to include the context, problem, and solution.
 \begin{rightbubbles}
 The \LaTeX\ section level was incorrect, which was the main source of
 confusion here.  These are “outputs” from Case Study 4 — not
-reflections on all of the case studies.  That’s fixed now.  {\huge ✔️}
+reflections on all of the case studies.  That’s fixed now.  {\large \emoji{check-mark}}
 
 (As for how formal we need to be about presenting them, see my comment
 above for now.)
@@ -1837,7 +1861,7 @@ are not implemented.
 \begin{rightbubbles}
 I’ve presented the material in both proto-pattern form and expanded
 using pattern language components; I think that’s the right level of
-detail for now. {\huge ✔️}
+detail for now. {\large \emoji{check-mark}}
 \end{rightbubbles}
 
 \section{Shepherd comments 3 Aug 2023, 15:58 and response}
@@ -1847,7 +1871,7 @@ The BACKGROUND and METHODOLOGY are written more detailed than before, which make
 \end{leftbubbles}
 
 \begin{rightbubbles}
-{\huge 👍}
+{\large \emoji{thumbs-up}}
 \end{rightbubbles}
 
 \begin{leftbubbles}
@@ -1855,12 +1879,12 @@ section3: The explanation of the diamond mark is written as a difference of the 
 \end{leftbubbles}
 
 \begin{rightbubbles}
-I introduced the separate {\huge ⚒} marker to distinguish those
+I introduced the separate {\normalsize \emoji{pick}} marker to distinguish those
 patterns which were created by workshop participants.  Since we are
 not presenting the exactly as they appeared in the workshop, they
 could be presented in either pattern or proto-pattern form.  For now,
 I’ve chosen to present them as proto-patterns, so the three patterns
-that are concerned also have the {\huge 💎} marker (see page 14). {\huge ✔️}
+that are concerned \emph{also have the} {\normalsize \emoji{gem}} \emph{marker} (see page \pageref{mnemonic-for-stepper}). {\large \emoji{check-mark}}
 \end{rightbubbles}
 
 \begin{leftbubbles}
@@ -1868,7 +1892,7 @@ Section4:DÉRIVE COMIX: It says "If you have a group BUT everyone has their own 
 \end{leftbubbles}
 
 \begin{rightbubbles}
-The diversity of perspectives in the group is really a good thing, since it can contribute to a richer meaning map!  As such this is an opportunity.  In the revised description of {\sc Pattern Language Components} for some wordsmithing related to how the “problem” language of DPL can be confusing for participants!  In {\sc D\'erive Comix}, the problem is really that “the group has been identified BUT the members don’t know each other well yet, and accordingly each has their own separate experience, and the group has no concrete shared meanings”... so I’ve included that revised text! {\huge ✔️}
+The diversity of perspectives in the group is really a good thing, since it can contribute to a richer meaning map!  As such this is an opportunity.  In the revised description of {\sc Pattern Language Components} for some wordsmithing related to how the “problem” language of DPL can be confusing for participants!  In {\sc D\'erive Comix}, the problem is really that “the group has been identified BUT the members don’t know each other well yet, and accordingly each has their own separate experience, and the group has no concrete shared meanings”... so I’ve included that revised text! {\large \emoji{check-mark}}
 \end{rightbubbles}
 
 
@@ -1878,7 +1902,7 @@ MEANING MAP (c): What is the problem with "everyone has their own experience"?
 
 \begin{rightbubbles}
 Again, this is mostly an opportunity: and the wording needs to be
-clarified, and I’ve tried to do so! {\huge ✔️}
+clarified, and I’ve tried to do so! {\large \emoji{check-mark}}
 \end{rightbubbles}
 
 \begin{leftbubbles}
@@ -1892,7 +1916,7 @@ The problem is how to overcome this tendency.  The idea in {\sc
   Reinfuse Expertise} is to overcome it by bringing together with
 people who have different expertise, getting them onto the same page
 as citizens, and only \emph{then} turning to their expertise.  I’ve
-tried to revise the pattern to clarify this. {\huge ✔️}
+tried to revise the pattern to clarify this. {\large \emoji{check-mark}}
 \end{rightbubbles}
 
 \begin{leftbubbles}
@@ -1910,7 +1934,7 @@ then people often object that they don’t want to focus on problems,
 but rather on challenges, or even better, on solutions!  However, DPL
 does have ‘conflicting forces’ at the core: so we need to a way for
 people to talk about conflict, without getting frustrated.  That’s
-what this pattern is trying to do. {\huge ✔️}
+what this pattern is trying to do. {\large \emoji{check-mark}}
 \end{rightbubbles}
 
 \begin{leftbubbles}
@@ -1932,7 +1956,7 @@ some clarifying comments about that figure (e.g., explaining why a
 different color was used, and also explaining that some of the
 patterns used here are after-the-fact descriptions of what we did on
 the day).  I provided a link to the full set of cards shared with
-participants in a footnote. {\huge ✔️}
+participants in a footnote. {\large \emoji{check-mark}}
 \end{rightbubbles}
 
 \begin{leftbubbles}
@@ -1943,7 +1967,7 @@ describe this in the sentence and refer to Figure 2.
 
 \begin{rightbubbles}
 We modified the picture slightly so that it is a bit simpler, and made
-the accompanying text more to the point. {\huge ✔️}
+the accompanying text more to the point. {\large \emoji{check-mark}}
 \end{rightbubbles}
 
 \begin{leftbubbles}
@@ -1951,7 +1975,7 @@ section5: I didn't catch who Abby Tabor was for a moment, so it would be more he
 \end{leftbubbles}
 
 \begin{rightbubbles}
-Added ``coauthor” to explain her role in the paper. {\huge ✔️}
+Added ``coauthor” to explain her role in the paper. {\large \emoji{check-mark}}
 \end{rightbubbles}
 
 \begin{leftbubbles}
@@ -1965,7 +1989,7 @@ I added a new Table \ref{mnemonic-for-manipulatives} which explains
 the relationship to the chess pieces.  Although it wasn’t specifically
 requested in your shepherding remarks, I’d also like to point to Table
 \ref{active-inference-factors}, which re-describes the main roles in
-more theoretically-salient terms. {\huge ✔️}
+more theoretically-salient terms. {\large \emoji{check-mark}}
 \end{rightbubbles}
 
 \begin{leftbubbles}
@@ -1976,7 +2000,7 @@ Figure 3 came out suddenly, but which sentence is it referred to in? It is good 
   I’ve checked in Emacs, using \texttt{occur}, that the figures and
   tables are all referenced in nearby text.  The text should now be
   readable in a stand-alone fashion (i.e., without the
-  figures). {\huge ✔️}
+  figures). {\large \emoji{check-mark}}
 \end{rightbubbles}
 
 \end{document}
